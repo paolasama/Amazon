@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*este para la barra*/
 .nav-sprite-v1 .nav-sprite, .nav-sprite-v1 .nav-icon {
   background-image: url(https://m.media-amazon.com/images/G/33/gno/sprites/nav-sprite-global-1x-reorg-privacy._CB600086696_.png);
@@ -104,3 +105,9 @@
 
     #icp-touch-link-country { display: none; }
     
+=======
+img {
+  display: block;
+  margin: 0 auto;
+}
+>>>>>>> cfe7cf11ca4ba5b76b214fe4cfb85953a4f67941

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*este diseño para la barra*/
 window.navmet.tmp=+new Date();
 window.navmet.push({key:'Logo',end:+new Date(),begin:window.navmet.tmp});
@@ -837,3 +838,7 @@ window.grandprix.wrappers.listenForSFIFrameLoad("ape_Gateway_right-7_desktop_ifr
     
     window.ue && ue.count && ue.count('CSMLibrarySize', 77048)
 
+=======
+let d = new Date();
+document.body.innerHTML = "<h1>Time right now is:  " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()</h1>"
+>>>>>>> cfe7cf11ca4ba5b76b214fe4cfb85953a4f67941
