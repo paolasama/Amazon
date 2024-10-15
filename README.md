@@ -4,14 +4,14 @@
 >[!NOTE]
 >A
 
->.[!TIP].
+>[!TIP]
 >E
 
->.[!IMPORTANT].
+>[!IMPORTANT]
 >O
 
->.[!WARNING].
+>[!WARNING]
 >I
 
->.[!CAUTION].
+>[!CAUTION]
 >U
