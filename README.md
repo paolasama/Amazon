@@ -1,17 +1,17 @@
 <h1 align="left">Amazon mexico📦📚</h1>
 "Trabaja duro, diviértete, haz historia"
 
->.[!NOTE]
+>.[!NOTE].
 >A
 
->.[!TIP]
+>.[!TIP].
 >E
 
->.[!IMPORTANT]
+>.[!IMPORTANT].
 >O
 
->.[!WARNING]
+>.[!WARNING].
 >I
 
->.[!CAUTION]
+>.[!CAUTION].
 >U
