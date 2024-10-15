@@ -2,16 +2,4 @@
 "Trabaja duro, diviértete, haz historia"
 
 >[!NOTE]
->A
-
->[!TIP]
->E
-
->[!IMPORTANT]
->O
-
->[!WARNING]
->I
-
->[!CAUTION]
->U
+>se fundo en 1994 en Bellevue, Washington, Estados Unidos
