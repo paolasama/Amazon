@@ -1,4 +1,4 @@
-## Amazon mexico📦📚
+## Amazon Mexico📦📚
 ¡Trabaja duro, diviértete, haz historia!
 
 ## Nuestros Servicios de Amazon:
