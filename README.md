@@ -1,7 +1,7 @@
 ## Amazon mexico📦📚
 ¡Trabaja duro, diviértete, haz historia!
 
-## Nuestros Servicios de Amazon
+## Nuestros Servicios de Amazon:
 
 Descubre una amplia gama de servicios diseñados para mejorar tu experiencia digital y de entretenimiento:
 
