@@ -116,7 +116,7 @@ body {
     max-width: 250px;
   }
   .section img {
-    width: 50%;
+    width: 80%;
     height: auto;
   }
   .section-title {
@@ -133,6 +133,19 @@ body {
   .btn-primary:hover {
     background-color: rgb(0, 153, 255);
   }
-  .btn-seguro{
-    background-color: #e7d90c;
-  }
+  .btn-seguro {
+    background-color: #f0c14b; /* Color de fondo similar a Amazon */
+    border: 1px solid #a18a2e; /* Borde oscuro */
+    color: #111; /* Color del texto */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centra el texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Transición para hover */
+}
+
+.btn-seguro:hover {
+    background-color: #ddb900; /* Color al pasar el mouse */
+}
+
