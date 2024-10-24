@@ -31,92 +31,112 @@
                   </form>
                 </a>
               </div>
-              <!-- Botón de Identificación -->
-                <div class="nav-item" id="nav-signin-container">
-                  <a href="#" class="nav-action-button">Hola, identifícate, Listas y cuenta</a>
-                  <!-- Menú desplegable -->
-                  <div id="nav-signin-dropdown" class="dropdown-menu">
-                      <div id="nav-signin">
-                          <a href="https://www.tuweb.com/iniciar-sesion" class="nav-action-signin-button">
-                              <span class="nav-action-inner">Identificarse</span>
-                          </a>
-                          <div id="nav-newCust">
-                              ¿Eres un cliente nuevo?
-                              <a href="https://www.tuweb.com/registro" class="nav-a">Empieza aquí.</a>
-                          </div>
-                          <a class="nav-title">Mi listas</a>
-                          <a href="/wishlist/crear" class="nav-link">Crear una Wish List</a>
-                          <a href="/baby-reg" class="nav-link">Mesa de Regalos de Bebé</a>
-                          <a href="/wedding-reg" class="nav-link">Mesa de Regalos de Boda</a>
-                          <p></p>
-                          <div class="nav-title">Mi cuenta</div>
-                          <a href="/mi-cuenta" class="nav-link">Mi cuenta</a>
-                          <a href="/mis-pedidos" class="nav-link">Mis pedidos</a>
-                          <a href="/mis-recomendaciones" class="nav-link">Mis recomendaciones</a>
-                          <a href="/mi-prime" class="nav-link">Mi membresía Prime</a>
-                          <a href="/suscripciones" class="nav-link">Membresías y suscripciones</a>
-                      </div>
-                  </div>
+              <div class="menu">
+                <button class="menu-button">Hola identificante, Cuenta y listas</button>
+                <div class="dropdown-content">
+                  <a href="#" class="btn-seguro">identificante</a>
+                  <a>¿Eres un cliente nuevo?<a href="#">Empieza aqui</a>
+                  <table class="table table-bordered">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <!-- Columna "Mis listas" -->
+                          <td>
+                            <h4>Mis listas</h4>
+                            <a href="#">Crear una lista de deseos</a><br>
+                            <a href="#">Lista de bodas</a><br>
+                            <a href="#">Lista de Nacimiento</a><br>
+                            <a href="#">Descubre tu estilo</a><br>
+                            <a href="#">Explorar Showroom</a>
+                          </td>
+                          
+                          <!-- Línea vertical separadora -->
+                          <td class="divider">
+                            <!-- Columna "Mi cuenta" -->
+                            <h4>Mi cuenta</h4>
+                            <a href="#">Mi cuenta</a><br>
+                            <a href="#">Mis pedidos</a><br>
+                            <a href="#">Tu cuenta de vendedor</a><br>
+                            <a href="#">Mi lista de deseos</a><br>
+                            <a href="#">Mis recomendaciones</a><br>
+                            <a href="#">Mi suscripción a Amazon Prime</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                 </div>
-
+            </div>
                 <!-- Estilos CSS para el menú flotante -->
                 <style>
-                .nav-item {
-                  position: relative;
-                  display: inline-block;
+                  /* Estilo de la tabla */
+                table {
+                    width: 100%;
+                    border-spacing: 30px;
                 }
 
-                .nav-action-button {
-                  padding: 10px;
-                  background-color: #0f151d;
-                  text-decoration: none;
-                  color: #383636; /* Letras blancas en el botón */
-                  border-radius: 4px;
+                /* Estilo de las celdas */
+                td {
+                    vertical-align: top;
                 }
 
-                .dropdown-menu {
-                  display: none;
-                  position: absolute;
-                  top: 100%;
-                  left: 0;
-                  background-color: #2c2b2b; /* Fondo blanco */
-                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-                  z-index: 1;
-                  padding: 10px;
-                  width: 200px;
+                /* Línea vertical divisora */
+                    .divider {
+                    border-left: 2px solid black;
+                    min-height: 300px; /* Asegura una altura mínima */
+                    margin-left: 20px;
+                    padding-left: 20px;
                 }
-                .nav-item:hover .dropdown-menu {
-                  display: block;
+               /* Contenedor del menú */
+                .menu {
+                    position: relative;
+                    display: inline-block;
                 }
 
-                .nav-title {
-                  font-weight: bold;
-                  margin-bottom: 10px;
-                  color: #333; /* Texto negro */
+                /* Estilo del botón */
+                .menu-button {
+                    background-color: #0f151d; /* Color oscuro que mencionaste */
+                    color: white; /* Texto en blanco */
+                    padding: 10px 20px; /* Espaciado interno del botón */
+                    font-size: 16px;
+                    border: none; /* Sin borde */
+                    cursor: pointer;
+                    font-family: Arial, sans-serif; /* Fuente similar a Amazon */
                 }
 
-                .nav-link {
-                  display: block;
-                  color: #000; /* Texto negro */
-                  padding: 5px 0;
-                  text-decoration: none;
+                /* Estilo del botón al pasar el ratón */
+                .menu-button:hover {
+                    background-color: #1a202c; /* Un tono ligeramente más claro al hacer hover */
                 }
 
-                .nav-link:hover {
-                  color: #ff9900; /* Texto naranja al hacer hover */
+                /* Contenido del menú desplegable */
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                    color: black;
+                    padding: 12px;
+                    min-width: 250px;
+                    z-index: 1;
                 }
 
-                #nav-signin-container {
-                  margin-right: 20px;
+                /* Estilo para las opciones del menú */
+                .dropdown-content a {
+                    color: #0f151d;
+                    padding: 8px 12px;
+                    text-decoration: none;
+                    display: block;
                 }
 
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                /* Mostrar el contenido del menú al pasar el ratón */
+                .menu:hover .dropdown-content {
+                    display: block;
+                }
                 </style>
-
-                <!-- Opcional: JavaScript para control adicional -->
-                <script>
-                  // Puedes usar JavaScript para controlar eventos o añadir más interacción si lo necesitas.
-                </script>
-
                     <a>
                     <a class="nav-item">
                         <a class="nav-link" href="#">Devoluciones y Pedidos</a>
@@ -171,7 +191,7 @@
           <div class="section">
             <thead>
               <tr>
-                <th><h5 class="section-title">Ofertas en tendencia</h5></th>
+                <th><h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5></th>
               </tr>
             </thead>
             <tbody>
@@ -265,7 +285,6 @@
           </div>
         </div>
         <div>
-          
         </div>
 </body>
 </html>
