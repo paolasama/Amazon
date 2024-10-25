@@ -148,7 +148,14 @@
             </div>
             <div class="navbar">
                 <ul class="submenu-list">
-                  <a href="#">Inicio</a>
+                  <a id="menuBtn" onclick="openNav()">&#9776; Inicio</a>
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Enlace 1</a>
+                    <a href="#">Enlace 2</a>
+                    <a href="#">Enlace 3</a>
+                    <a href="#">Enlace 4</a>
+                  </div>
                   <a href="#">Vender</a>
                   <a href="#">Lo más vendido</a>
                   <a class="nav-item">
@@ -172,6 +179,7 @@
                 </ul>
               </div>
         </div>
+      
     </header>    
 </nav>
     <!-- Carrusel -->
@@ -182,109 +190,277 @@
           <img src="./img/cocina.jpg" alt="Imagen 3">
         </div>
       </div>
-      <div class="container">
-      <div class="section-container">
+      <div class="main-container">
         <div class="container">
-          <div class="table-container">        
-          <!-- Sección 1: Ofertas en tendencia -->
-          <table class="table table-bordered">
-          <div class="section">
-            <thead>
-              <tr>
-                <th><h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="./img/audifono.jpg" alt="audio"></td>
-                <td><img src="./img/licor.jpg" alt="licores" class="img-fluid"></td>
-              </tr>
-              <tr>
-                <td><img src="./img/cama.jpg" alt="camas" class="img-fluid"></td>
-                <td><img src="./img/reloj.png" alt="Electrónicos" class="img-fluid"><a href="#" class="btn btn-primary">Ver más</a></td>
-                
-              </tr>
-            </tbody>
-          </table>
-          <!-- Sección 2: Accesorios para gamers -->
-          <div class="section">
-            <h5 class="section-title" style="text-align: center;">Accesorios para gamers a 24 meses</h5>
-            
-            <!-- Imagen de Nintendo -->
-            <div style="text-align: center;">
-                <img src="./img/nintendo.jpg" alt="Nintendo" class="img-fluid">
-                <p>Nintendo</p>
-            </div>
-            
-            <!-- Contenedor para Playstation, Xbox y PC -->
-            <div style="display: flex; justify-content: space-around; align-items: center;">
-                <!-- Imagen de Playstation -->
-                <div style="text-align: center;">
-                    <img src="./img/playstation.jpg" alt="Playstation" class="img-fluid">
-                    <p>Playstation</p>
+          <div class="section-container">
+            <div class="container">
+              <div class="table-container">
+                <!-- Sección 1: Ofertas en tendencia -->
+                <div class="section">
+                  <h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5>
+                  <div style="text-align: center;">
+                    <img src="./img/anuncios.png" alt="Anuncio" class="custom-size">                 
+                  </div>
+                  <div style="text-align: center;">
+                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
-        
-                <!-- Imagen de Xbox -->
-                <div style="text-align: center;">
-                    <img src="./img/xbox.jpg" alt="Xbox" class="img-fluid">
-                    <p>Xbox</p>
+      
+                <!-- Sección 2: Accesorios para gamers -->
+                <div class="section">
+                  <h5 class="section-title" style="text-align: center;">Accesorios para gamers a 24 meses</h5>
+                  <div style="text-align: center;">
+                    <img src="./img/nintendo.jpg" alt="Nintendo" class="img-fluid">
+                    <p>Nintendo</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-around; align-items: center;">
+                    <div style="text-align: center;">
+                      <img src="./img/playstation.jpg" alt="Playstation" class="img-fluid">
+                      <p>Playstation</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/xbox.jpg" alt="Xbox" class="img-fluid">
+                      <p>Xbox</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/pc.jpg" alt="PC" class="img-fluid">
+                      <p>PC</p>
+                    </div>
+                  </div>
+                  <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
-        
-                <!-- Imagen de PC -->
-                <div style="text-align: center;">
-                    <img src="./img/pc.jpg" alt="PC" class="img-fluid">
-                    <p>PC</p>
+      
+                <!-- Sección 3: Productos para Halloween -->
+                <div class="section">
+                  <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                  <div style="text-align: center;">
+                    <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                    <p>Todos los Productos</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-around; align-items: center;">
+                    <div style="text-align: center;">
+                      <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                      <p>Disfraces</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                      <p>Accesorios</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                      <p>Decoracion</p>
+                    </div>
+                  </div>
+                  <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
-            </div>
-            
-            <!-- Botón de acción -->
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-        </div>
-        <!-- Sección 3: Productos para Halloween -->
-          <div class="section">
-            <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
-            
-            <!-- Imagen de disfras -->
-            <div style="text-align: center;">
-                <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
-                <p>Todos los Productos</p>
-            </div>
-            
-            <!-- Contenedor para Playstation, Xbox y PC -->
-            <div style="display: flex; justify-content: space-around; align-items: center;">
-                <!-- Imagen de Playstation -->
-                <div style="text-align: center;">
-                    <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
-                    <p>Disfraces</p>
+      
+                <!-- Sección 4: Inicia sesión -->
+                <div class="section text-center">
+                  <h5 class="section-title">Inicia sesión para vivir tu mejor experiencia</h5>
+                  <button class="btn-seguro">Iniciar sesión de forma segura</button>
                 </div>
-        
-                <!-- Imagen de Xbox -->
-                <div style="text-align: center;">
-                    <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
-                    <p>Accesorios</p>
-                </div>
-        
-                <!-- Imagen de PC -->
-                <div style="text-align: center;">
-                    <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
-                    <p>Decoracion</p>
-                </div>
+              </div>
             </div>
-            
-            <!-- Botón de acción -->
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="#" class="btn btn-primary">Ver más</a>
-            </div>
-        </div>
-          <!-- Sección 4: Inicia sesión -->
-          <div class="section text-center">
-            <h5 class="section-title">Inicia sesión para vivir tu mejor experiencia</h5>
-            <button class="btn-seguro">Iniciar sesión de forma segura</button>
           </div>
         </div>
-        <div>
+      </div>
+      
+      <style>
+      .table-container {
+        margin: 0;
+        padding: 0;
+      }
+      .table td, .table th {
+        padding: 5px;
+      }
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      .section-title {
+        font-weight: bold;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      </style>
+        <div class="main-container">
+          <div class="container">
+            <div class="section-container">
+              <div class="container">
+                <div class="table-container">
+                  <!-- Sección 1: Ofertas en tendencia -->
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+        
+                  <!-- Repite las secciones adicionales aquí... -->
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        
+        <style>
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .container {
+            margin: 0;
+            padding: 0;
+          }
+          .table-container {
+            margin: 0;
+            padding: 0;
+          }
+          .table td, .table th {
+            padding: 5px;
+          }
+          .img-fluid {
+            max-width: 100%;
+            height: auto;
+          }
+          .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+          }
+          .section-title {
+            font-weight: bold;
+          }
+          .section {
+            margin-bottom: 20px;
+          }
+        </style>
+        
+      </div>
+    </div>
+  </div>
 </body>
 </html>
