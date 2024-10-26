@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com</title>
+    <link rel="stylesheet" href="estilo.css"/>
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a class="navbar-brand" href="#">
+                <img src="./img/amazon-logo.png" alt="Logo de Amazon">
+            </a>
+            <a href="#">ubicacion</a>
+
+            <div class="navbar">
+                <a class="nav-item">
+                  <select class="custom-select">
+                    <option value="all">Todas las categorías</option>
+                    <option value="electronics">Electrónicos</option>
+                    <option value="toys">Juguetes</option>
+                    <option value="home">Hogar y Cocina</option>
+                    <option value="books">Libros</option>
+                  </select>
+                  <a>
+                  <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="Buscar Amazon.com.mx" aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                  </form>
+                </a>
+              </div>
+              <div class="menu">
+                <button class="menu-button">Hola identificante, Cuenta y listas</button>
+                <div class="dropdown-content">
+                  <a href="#" class="btn-seguro">identificante</a>
+                  <a>¿Eres un cliente nuevo?<a href="#">Empieza aqui</a>
+                  <table class="table table-bordered">
+                    <table>
+                      <tbody>
+                        <tr>
+                          <!-- Columna "Mis listas" -->
+                          <td>
+                            <h4>Mis listas</h4>
+                            <a href="#">Crear una lista de deseos</a><br>
+                            <a href="#">Lista de bodas</a><br>
+                            <a href="#">Lista de Nacimiento</a><br>
+                            <a href="#">Descubre tu estilo</a><br>
+                            <a href="#">Explorar Showroom</a>
+                          </td>
+                          
+                          <!-- Línea vertical separadora -->
+                          <td class="divider">
+                            <!-- Columna "Mi cuenta" -->
+                            <h4>Mi cuenta</h4>
+                            <a href="#">Mi cuenta</a><br>
+                            <a href="#">Mis pedidos</a><br>
+                            <a href="#">Tu cuenta de vendedor</a><br>
+                            <a href="#">Mi lista de deseos</a><br>
+                            <a href="#">Mis recomendaciones</a><br>
+                            <a href="#">Mi suscripción a Amazon Prime</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+                <!-- Estilos CSS para el menú flotante -->
+                <style>
+                  /* Estilo de la tabla */
+                table {
+                    width: 100%;
+                    border-spacing: 30px;
+                }
+
+                /* Estilo de las celdas */
+                td {
+                    vertical-align: top;
+                }
+
+                /* Línea vertical divisora */
+                    .divider {
+                    border-left: 2px solid black;
+                    min-height: 300px; /* Asegura una altura mínima */
+                    margin-left: 20px;
+                    padding-left: 20px;
+                }
+               /* Contenedor del menú */
+                .menu {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                /* Estilo del botón */
+                .menu-button {
+                    background-color: #0f151d; /* Color oscuro que mencionaste */
+                    color: white; /* Texto en blanco */
+                    padding: 10px 20px; /* Espaciado interno del botón */
+                    font-size: 16px;
+                    border: none; /* Sin borde */
+                    cursor: pointer;
+                    font-family: Arial, sans-serif; /* Fuente similar a Amazon */
+                }
+
+                /* Estilo del botón al pasar el ratón */
+                .menu-button:hover {
+                    background-color: #1a202c; /* Un tono ligeramente más claro al hacer hover */
+                }
+
+                /* Contenido del menú desplegable */
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: white;
+                    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                    color: black;
+                    padding: 12px;
+                    min-width: 250px;
+                    z-index: 1;
+                }
+
+                /* Estilo para las opciones del menú */
+                .dropdown-content a {
+                    color: #0f151d;
+                    padding: 8px 12px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+                /* Mostrar el contenido del menú al pasar el ratón */
+                .menu:hover .dropdown-content {
+                    display: block;
+                }
+                </style>
+                    <a>
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">Devoluciones y Pedidos</a>
+                    </a>
+                    <a class="nav-item">
+                        <a class="nav-link" href="#">🛒 Carrito</a>
+                    </a>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul class="submenu-list">
+                  <a id="menuBtn" onclick="openNav()">&#9776; Inicio</a>
+                  <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Enlace 1</a>
+                    <a href="#">Enlace 2</a>
+                    <a href="#">Enlace 3</a>
+                    <a href="#">Enlace 4</a>
+                  </div>
+                  <a href="#">Vender</a>
+                  <a href="#">Lo más vendido</a>
+                  <a class="nav-item">
+                    <select class="custom-select-3">
+                    <option value="all">Prime</option>
+                    <option value="electronics">Electrónicos</option>
+                    <option value="toys">Juguetes</option>
+                    <option value="home">Hogar y Cocina</option>
+                    <option value="books">Libros</option>
+                    </select>
+                    <a>
+                  <a href="#">Amazon Basics</a>
+                  <a href="#">Promociones</a>
+                  <a href="#">Música</a>
+                  <a href="#">Lo nuevo</a>
+                  <a href="#">Outlet</a>
+                  <a href="#">Lo más regalado</a>
+                  <a href="#">Hogar y Cocina</a>
+                  <a href="#">Electrónicos</a>
+                  <a href="#">Juguetes y juegos de mesa</a>
+                </ul>
+              </div>
+        </div>
+      
+    </header>    
+</nav>
+    <!-- Carrusel -->
+    <div class="carousel">
+        <div class="carousel-inner">
+          <img src="./img/libro.jpg" alt="Imagen 1">
+          <img src="./img/juguete.jpg" alt="Imagen 2">
+          <img src="./img/cocina.jpg" alt="Imagen 3">
+        </div>
+      </div>
+      <div class="main-container">
+        <div class="container">
+          <div class="section-container">
+            <div class="container">
+              <div class="table-container">
+                <!-- Sección 1: Ofertas en tendencia -->
+                <div class="section">
+                  <h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5>
+                  <div style="text-align: center;">
+                    <img src="./img/anuncios.png" alt="Anuncio" class="custom-size">                 
+                  </div>
+                  <div style="text-align: center;">
+                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  </div>
+                </div>
+      
+                <!-- Sección 2: Accesorios para gamers -->
+                <div class="section">
+                  <h5 class="section-title" style="text-align: center;">Accesorios para gamers a 24 meses</h5>
+                  <div style="text-align: center;">
+                    <img src="./img/nintendo.jpg" alt="Nintendo" class="img-fluid">
+                    <p>Nintendo</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-around; align-items: center;">
+                    <div style="text-align: center;">
+                      <img src="./img/playstation.jpg" alt="Playstation" class="img-fluid">
+                      <p>Playstation</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/xbox.jpg" alt="Xbox" class="img-fluid">
+                      <p>Xbox</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/pc.jpg" alt="PC" class="img-fluid">
+                      <p>PC</p>
+                    </div>
+                  </div>
+                  <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  </div>
+                </div>
+      
+                <!-- Sección 3: Productos para Halloween -->
+                <div class="section">
+                  <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                  <div style="text-align: center;">
+                    <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                    <p>Todos los Productos</p>
+                  </div>
+                  <div style="display: flex; justify-content: space-around; align-items: center;">
+                    <div style="text-align: center;">
+                      <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                      <p>Disfraces</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                      <p>Accesorios</p>
+                    </div>
+                    <div style="text-align: center;">
+                      <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                      <p>Decoracion</p>
+                    </div>
+                  </div>
+                  <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  </div>
+                </div>
+      
+                <!-- Sección 4: Inicia sesión -->
+                <div class="section text-center">
+                  <h5 class="section-title">Inicia sesión para vivir tu mejor experiencia</h5>
+                  <button class="btn-seguro">Iniciar sesión de forma segura</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+      .table-container {
+        margin: 0;
+        padding: 0;
+      }
+      .table td, .table th {
+        padding: 5px;
+      }
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      .section-title {
+        font-weight: bold;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      </style>
+        <div class="main-container">
+          <div class="container">
+            <div class="section-container">
+              <div class="container">
+                <div class="table-container">
+                  <!-- Sección 1: Ofertas en tendencia -->
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+        
+                  <!-- Repite las secciones adicionales aquí... -->
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                  <div class="section">
+                    <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
+                    <!-- Imagen de disfraz -->
+                    <div style="text-align: center;">
+                      <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
+                      <p>Todos los Productos</p>
+                    </div>
+                    <!-- Contenedor para Playstation, Xbox y PC -->
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                      <!-- Imagen de Playstation -->
+                      <div style="text-align: center;">
+                        <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
+                        <p>Disfraces</p>
+                      </div>
+                      <!-- Imagen de Xbox -->
+                      <div style="text-align: center;">
+                        <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
+                        <p>Accesorios</p>
+                      </div>
+                      <!-- Imagen de PC -->
+                      <div style="text-align: center;">
+                        <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
+                        <p>Decoracion</p>
+                      </div>
+                    </div>
+                    <!-- Botón de acción -->
+                    <div style="text-align: center; margin-top: 20px;">
+                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Métodos de Pago - Ejemplo</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f4f4f4;
+              }
+              .payment-section {
+                  width: 80%;
+                  max-width: 800px;
+                  margin: 30px auto;
+                  padding: 20px;
+                  background: #fff;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  border-radius: 8px;
+              }
+              .payment-section h2 {
+                  text-align: center;
+                  color: #333;
+              }
+              .payment-section p {
+                  text-align: center;
+                  color: #666;
+              }
+              .payment-methods {
+                  display: flex;
+                  justify-content: space-around;
+                  flex-wrap: wrap;
+                  margin-top: 20px;
+              }
+              .payment-method {
+                  text-align: center;
+                  margin: 10px;
+              }
+              .payment-method img {
+                  width: 60px;
+                  height: auto;
+              }
+          </style>
+      </head>
+      <body>
+      
+      <div class="payment-section">
+          <h2>Descubre nuestros Metodos de Pago</h2>
+          <p>Conoce las opciones que ofrecemos para realizar tus pagos de forma segura y conveniente.</p>
+          <div class="payment-methods">
+              <div class="payment-method">
+                <img src="./img/visa.png" alt="Visa" class="img-fluid">  
+              </div>
+              <div class="payment-method">
+                <img src="./img/mastercard.png" alt="MasterCard" class="img-fluid">
+              </div>
+              <div class="payment-method">
+                <img src="./img/Amex.png" alt="American Express" class="img-fluid">
+              </div>
+              <div class="payment-method">
+                <img src="./img/PayPal.png" alt="PayPal" class="img-fluid">
+              </div>
+          </div>
+      </div>
+      
+      
+      </body>
+        <style>
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .container {
+            margin: 0;
+            padding: 0;
+          }
+          .table-container {
+            margin: 0;
+            padding: 0;
+          }
+          .table td, .table th {
+            padding: 5px;
+          }
+          .img-fluid {
+            max-width: 100%;
+            height: auto;
+          }
+          .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+          }
+          .section-title {
+            font-weight: bold;
+          }
+          .section {
+            margin-bottom: 10px;
+          }
+        </style>
+        
+      </div>
+    </div>
+  </div>
+</body>
+</html>
