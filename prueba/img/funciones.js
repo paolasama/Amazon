@@ -1,4 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
+  var loader = document.getElementById('loader');
+  var content = document.querySelector('.content');
+
+  // Simular un retardo de carga
+  setTimeout(function() {
+    loader.style.display = 'none';
+    content.style.display = 'block';
+  }, 2000); // 2 segundos de retardo
+});
+
+document.addEventListener("DOMContentLoaded", function() {
     const verMasBtn = document.getElementById("verMasBtn");
   
     verMasBtn.addEventListener("click", function(event) {
