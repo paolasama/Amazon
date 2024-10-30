@@ -1,3 +1,11 @@
+// Simular carga de contenido
+window.onload = function() {
+  document.getElementById('loader').style.display = 'none'; // Oculta el loader
+  document.getElementById('content').style.display = 'block'; // Muestra el contenido
+};
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const verMasBtn = document.getElementById("verMasBtn");
   

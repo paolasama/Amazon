@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductoController;
-use App\Http\Controllers\indexController;
-use App\Http\Controllers\postController;
+use App\Http\Controllers\IndexController;
 
-// routes/web.php
-Route::get('/',[IndexController::class, 'index'] );
+Route::get('/', [IndexController::class, 'index']);
+
 
 Route::get('/post', [PostController::class, 'index'] );
 
