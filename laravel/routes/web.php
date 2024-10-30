@@ -8,3 +8,12 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/post', function () {
+    return view('index');
+});
+
+//get
+//post
+//put
+//patch
+//delete
