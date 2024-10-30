@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="navbar">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.blade.php">
                 <img src="./img/amazon-logo.png" alt="Logo de Amazon">
             </a>
             <a href="#">ubicacion</a>
@@ -560,7 +560,7 @@
   </div>
   <!-- footer -->
   <div class="navLeftFooter nav-sprite-v1" id="navFooter">
-    <a href="index.html" id="navBackToTop" aria-label="Inicio de página">
+    <a href="index.blade.php" id="navBackToTop" aria-label="Inicio de página">
       <div class="navFooterBackToTop">
           <span class="navFooterBackToTopText">
               Inicio de página
