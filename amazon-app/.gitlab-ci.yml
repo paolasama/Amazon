@@ -1,0 +1,41 @@
+image: php:8.1
+
+services:
+  - postgres:latest
+
+variables:
+  POSTGRES_DB: amazon
+  POSTGRES_USER: posgres
+  POSTGRES_PASSWORD: fic
+  DB_CONNECTION: pgsql
+  DB_HOST: postgres
+  DB_PORT: 5432
+  DB_DATABASE: amazon
+  DB_USERNAME: posgres
+  DB_PASSWORD: fic
+
+cache:
+  paths:
+    - vendor/
+
+stages:
+  - test
+
+before_script:
+  - apt-get update && apt-get install -y unzip
+  - curl -sS https://getcomposer.org/installer | php
+  - mv composer.phar /usr/local/bin/composer
+  - cp .env.example .env
+  - composer install
+  - php artisan key:generate
+  - sed -i "s/DB_CONNECTION=mysql/DB_CONNECTION=pgsql/g" .env
+  - sed -i "s/DB_HOST=127.0.0.1/DB_HOST=postgres/g" .env
+  - sed -i "s/DB_PORT=3306/DB_PORT=5432/g" .env
+  - sed -i "s/DB_DATABASE=laravel/DB_DATABASE=${POSTGRES_DB}/g" .env
+  - sed -i "s/DB_USERNAME=root/DB_USERNAME=${POSTGRES_USER}/g" .env
+  - sed -i "s/DB_PASSWORD=/DB_PASSWORD=${POSTGRES_PASSWORD}/g" .env
+
+test:
+  script:
+    - php artisan migrate --force
+    - php artisan test
