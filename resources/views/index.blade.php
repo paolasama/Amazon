@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon.com.mx</title>
     <link rel="icon" href="./img/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="estilo.css"/>
-    <script src="funciones.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
+    <script src="{{ asset('js/funciones.js') }}"></script>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <a class="navbar-brand" href="index.html">
-                <img src="./img/amazon-logo.png" alt="Logo de Amazon">
-            </a>
+        <a class="navbar-brand" href="{{ url('/') }}">
+          <img src="{{ asset('img/amazon-logo.png') }}" alt="Logo de Amazon">
+        </a>
+
             <a href="#">ubicacion</a>
 
             <div class="navbar">
@@ -550,13 +551,13 @@
   </div>
   <!-- footer -->
   <div class="navLeftFooter nav-sprite-v1" id="navFooter">
-    <a href="index.html" id="navBackToTop" aria-label="Inicio de página">
-      <div class="navFooterBackToTop">
-          <span class="navFooterBackToTopText">
-              Inicio de página
-          </span>
-      </div>
-  </a>
+    <a href="{{ url('/') }}" id="navBackToTop" aria-label="Inicio de página">
+        <div class="navFooterBackToTop">
+            <span class="navFooterBackToTopText">
+                Inicio de página
+            </span>
+        </div>
+    </a>
     <div class="navFooterVerticalColumn navAccessibility" role="presentation">
       <div class="navFooterVerticalRow navAccessibility" style="display: table-row;">
             <div class="navFooterLinkCol navAccessibility">
