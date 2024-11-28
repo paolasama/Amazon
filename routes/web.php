@@ -11,3 +11,5 @@ Route::get('/', [Homecontroller::class, 'index']);
 
 Route::get('/search', [SearchController::class, 'index'])->name('search');
 
+
+
