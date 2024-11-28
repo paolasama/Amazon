@@ -34,108 +34,122 @@
                 </a>
               </div>
               <div class="menu">
-                <button class="menu-button">Hola, identifícate. Cuenta y listas</button>
-                <div class="dropdown-content">
-                  <a href="#" class="btn-seguro">Identifícate</a>
-                  <p>¿Eres un cliente nuevo? <a href="#">Empieza aquí</a></p>
-                  <table class="table table-bordered">
-                    <tbody>
-                      <tr>
-                        <!-- Columna "Mis listas" -->
-                        <td>
-                          <h4>Mis listas</h4>
-                          <a href="#">Crear una lista de deseos</a><br>
-                          <a href="#">Lista de bodas</a><br>
-                          <a href="#">Lista de Nacimiento</a><br>
-                          <a href="#">Descubre tu estilo</a><br>
-                          <a href="#">Explorar Showroom</a>
-                        </td>
-                        <!-- Línea vertical separadora -->
-                        <td class="divider">
-                          <h4>Mi cuenta</h4>
-                          <a href="#">Mi cuenta</a><br>
-                          <a href="#">Mis pedidos</a><br>
-                          <a href="#">Tu cuenta de vendedor</a><br>
-                          <a href="#">Mi lista de deseos</a><br>
-                          <a href="#">Mis recomendaciones</a><br>
-                          <a href="#">Mi suscripción a Amazon Prime</a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              
-              <!-- Estilos CSS para el menú flotante -->
-              <style>
-                /* Estilo de la tabla */
-                table {
-                  width: 100%;
-                  border-spacing: 20px;
-                }
-              
-                /* Estilo de las celdas */
-                td {
-                  vertical-align: top;
-                }
-              
-                /* Línea vertical divisora */
-                .divider {
-                  border-left: 2px solid black;
-                  padding-left: 20px;
-                }
-              
-                /* Contenedor del menú */
-                .menu {
-                  position: relative;
-                  display: inline-block;
-                }
-              
-                /* Estilo del botón */
-                .menu-button {
-                  background-color: #232F3E; /* Un color oscuro más similar al de Amazon */
-                  color: white; /* Texto en blanco */
-                  padding: 10px 20px;
-                  font-size: 16px;
-                  border: none;
-                  cursor: pointer;
-                  font-family: Arial, sans-serif;
-              }
+                    <button class="menu-button">Hola, identifícate. Cuenta y listas</button>
+                    <div class="dropdown-content">
+                      <a href="login" class="btn-seguro">Identifícate</a>
+                      <p>¿Eres un cliente nuevo? <a href="register">Empieza aquí</a></p>
+                      <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <!-- Columna "Mis listas" -->
+                            <td>
+                              <h4>Mis listas</h4>
+                              <a href="#">Crear una lista de deseos</a><br>
+                              <a href="#">Lista de bodas</a><br>
+                              <a href="#">Lista de Nacimiento</a><br>
+                              <a href="#">Descubre tu estilo</a><br>
+                              <a href="#">Explorar Showroom</a>
+                            </td>
+                            <!-- Línea vertical separadora -->
+                            <td class="divider">
+                              <h4>Mi cuenta</h4>
+                              <a href="#">Mi cuenta</a><br>
+                              <a href="#">Mis pedidos</a><br>
+                              <a href="#">Tu cuenta de vendedor</a><br>
+                              <a href="#">Mi lista de deseos</a><br>
+                              <a href="#">Mis recomendaciones</a><br>
+                              <a href="#">Mi suscripción a Amazon Prime</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
 
-              
-                /* Estilo del botón al pasar el ratón */
-                .menu-button:hover {
-                  background-color: #1a202c;
-                }
-              
-                /* Contenido del menú desplegable */
-                .dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: white;
-                  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-                  padding: 12px;
-                  min-width: 300px;
-                  z-index: 1;
-                }
-              
-                /* Estilo para las opciones del menú */
-                .dropdown-content a {
-                  color: #0f151d;
-                  padding: 8px 12px;
-                  text-decoration: none;
-                  display: block;
-                }
-              
-                .dropdown-content a:hover {
-                  background-color: #f1f1f1;
-                }
-              
-                /* Mostrar el contenido del menú al pasar el ratón */
-                .menu:hover .dropdown-content {
-                  display: block;
-                }
-              </style>
+                  <!-- Estilos CSS para el menú flotante -->
+                  <style>
+                    /* Estilo de la tabla */
+                    table {
+                      width: 100%;
+                      border-spacing: 20px;
+                    }
+
+                    /* Estilo de las celdas */
+                    td {
+                      vertical-align: top;
+                    }
+
+                    /* Línea vertical divisora */
+                    .divider {
+                      border-left: 2px solid black;
+                      padding-left: 20px;
+                    }
+
+                    /* Contenedor del menú */
+                    .menu {
+                      position: relative;
+                      display: inline-block;
+                    }
+
+                    /* Estilo del botón */
+                    .menu-button {
+                      background-color: #232F3E; /* Un color oscuro más similar al de Amazon */
+                      color: white; /* Texto en blanco */
+                      padding: 10px 20px;
+                      font-size: 16px;
+                      border: none;
+                      cursor: pointer;
+                      font-family: Arial, sans-serif;
+                      transition: background-color 0.3s ease; /* Transición suave para el hover */
+                    }
+                    h4{
+                      color: black;
+                    }
+
+                    /* Estilo del botón al pasar el ratón */
+                    .menu-button:hover {
+                      background-color: #1a202c; /* Un tono más oscuro para el hover */
+                    }
+
+                    /* Contenido del menú desplegable */
+                    .dropdown-content {
+                      display: none;
+                      position: absolute;
+                      background-color: white;
+                      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                      padding: 12px;
+                      min-width: 300px;
+                      z-index: 1;
+                      transition: opacity 0.3s ease; /* Transición para la visibilidad */
+                    }
+
+                    /* Estilo para las opciones del menú */
+                    .dropdown-content a,
+                    .dropdown-content p {
+                      color: #333; /* Texto en negro */
+                      padding: 8px 12px;
+                      text-decoration: none;
+                      display: block;
+                    }
+
+                    /* Hover para los enlaces dentro del menú */
+                    .dropdown-content a:hover,
+                    .dropdown-content p:hover {
+                      background-color: #f1f1f1; /* Fondo gris claro al pasar el ratón */
+                    }
+
+                    /* Mostrar el contenido del menú al pasar el ratón */
+                    .menu:hover .dropdown-content {
+                      display: block;
+                      opacity: 1;
+                    }
+
+                    /* Mejora de la visibilidad en el hover del menú */
+                    .dropdown-content a:active {
+                      background-color: #ddd; /* Fondo aún más oscuro al hacer clic */
+                    }
+                  </style>
+
                     <a>
                     <a class="nav-item">
                         <a class="nav-link" href="#">Devoluciones y Pedidos</a>
