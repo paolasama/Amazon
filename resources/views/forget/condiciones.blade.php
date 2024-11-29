@@ -222,384 +222,83 @@
       
     </header>    
 </nav>
-    <!-- Carrusel -->
-    <div class="carousel">
-        <div class="carousel-inner">
-          <img src="./img/libro.jpg" alt="Imagen 1">
-          <img src="./img/juguete.jpg" alt="Imagen 2">
-          <img src="./img/cocina.jpg" alt="Imagen 3">
-        </div>
-      </div>
         <!-- Loader -->
   <div class="loader" id="loader">
     <div class="spinner-border text-primary" role="status">
       <span class="sr-only">Cargando...</span>
     </div>
   </div>
-      <div class="main-container">
-        <div class="container">
-          <div class="section-container">
-            <div class="container">
-              <div class="table-container">
-                <!-- Sección 1: Ofertas en tendencia -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/anuncios.png" alt="Anuncio" class="custom-size">                 
-                  </div>
-                  <div style="text-align: center;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 2: Accesorios para gamers -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Accesorios para gamers a 24 meses</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/nintendo.jpg" alt="Nintendo" class="img-fluid">
-                    <p>Nintendo</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                      <img src="./img/playstation.jpg" alt="Playstation" class="img-fluid">
-                      <p>Playstation</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/xbox.jpg" alt="Xbox" class="img-fluid">
-                      <p>Xbox</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/pc.jpg" alt="PC" class="img-fluid">
-                      <p>PC</p>
-                    </div>
-                  </div>
-                  <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 3: Productos para Halloween -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
-                    <p>Todos los Productos</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                      <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
-                      <p>Disfraces</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
-                      <p>Accesorios</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
-                      <p>Decoracion</p>
-                    </div>
-                  </div>
-                  <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 4: Inicia sesión -->
-                <div class="section text-center">
-                  <h5 class="section-title">Inicia sesión para vivir tu mejor experiencia</h5>
-                  <form action="{{ route('login') }}" method="GET">
-                    <button type="submit" class="btn-seguro">Iniciar sesión de forma segura</button>
-                  </form>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <style>
-      .table-container {
-        margin: 0;
-        padding: 0;
-      }
-      .table td, .table th {
-        padding: 5px;
-      }
-      .img-fluid {
-        max-width: 100%;
-        height: auto;
-      }
-      .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-      }
-      .section-title {
-        font-weight: bold;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      </style>
-        <div class="main-container">
-          <div class="container">
-            <div class="section-container">
-              <div class="container">
-                <div class="table-container">
-                  <!-- Sección 1: Ofertas en tendencia -->
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Hasta 25% en audífonos y bocinas</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/audifono_inalambricos.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Audifono inalambricos</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/in_ear.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>In Ear</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/on-ear.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>On Ear</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/adaptadores.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Adaptadores</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-        
-                  <!-- Repite las secciones adicionales aquí... -->
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Ahorra en tus marcas favoritas</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/apple.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Apple</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/samsung.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Samsung</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/huawei.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Huawei</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/xiaomi.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Xiaomi</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Tus juguetes favoritos a 24 meses</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/juguetes.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Juguetes</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/pokemon.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Pokemon</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/hot_wheels.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Hot Wheels</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/yugioh.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Yugioh</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Ofertas por la Semana del Auto</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/auto_moto.jpg" loading="lazy" alt="Nintendo" class="img-fluid">
-                      <p>Todos para auto y moto</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/cuidado.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Cuidado</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/aceites.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Aceites</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/llantas.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Llantas</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- metodo de pago -->
-        <style>
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .container {
-            margin: 0;
-            padding: 0;
-          }
-          .table-container {
-            margin: 0;
-            padding: 0;
-          }
-          .table td, .table th {
-            padding: 5px;
-          }
-          .img-fluid {
-            max-width: 100%;
-            height: auto;
-          }
-          .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-          }
-          .section-title {
-            font-weight: bold;
-          }
-          .section {
-            margin-bottom: 10px;
-            margin-bottom: 20px;
-          }
-          </style>
-          <style>
+  <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        .payment-section {
-            width: 80%;
-            max-width: 800px;
-            margin: 30px auto;
+        header {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background-color: white;
         }
-        .payment-section h2 {
-            text-align: center;
-            color: #333;
+        h1, h2 {
+            color: #232f3e;
         }
-        .payment-section p {
-            text-align: center;
-            color: #666;
+        p {
+            margin: 20px 0;
         }
-        .payment-methods {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .payment-method {
-            text-align: center;
-            margin: 10px;
-        }
-        .payment-method img {
-            width: 60px;
-            height: auto;
-        }
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container, .table-container {
-            margin: 0;
-            padding: 0;
-        }
-        .table td, .table th {
-            padding: 5px;
-        }
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-        .section-title {
-            font-weight: bold;
-        }
-        .section {
+        .content-section {
             margin-bottom: 20px;
         }
-    </style></style>
+    </style>
 </head>
 <body>
-    <div class="payment-section">
-        <h2>Descubre nuestros Métodos de Pago</h2>
-        <p>Conoce las opciones que ofrecemos para realizar tus pagos de forma segura y conveniente.</p>
-        <div class="payment-methods">
-            <div class="payment-method">
-                <img src="./img/visa.png" alt="Visa" loading="lazy" class="img-fluid">
-                <p>Visa</p>
-            </div>
-            <div class="payment-method">
-                <img src="./img/mastercard.png" alt="MasterCard" loading="lazy" class="img-fluid">
-                <p>MasterCard </p>
-              </div>
-            <div class="payment-method">
-                <img src="./img/Amex.png" alt="American Express" loading="lazy" class="img-fluid">
-                <p>American Express</p>
-            </div>
-            <div class="payment-method">
-                <img src="./img/PayPal.png" alt="PayPal" loading="lazy" class="img-fluid">
-                <p>PayPal</p>
-            </div>
-        </div>
-    </div>
-      </div>
-    </div>
-  </div>
+
+<header>
+    <h1>Condiciones de Uso</h1>
+</header>
+
+<main>
+    <section class="content-section">
+        <h2>Bienvenido a Amazon.com.mx</h2>
+        <p>Servicios Comerciales Amazon México, S. de R.L. de C.V. y/o sus filiales ("Amazon") le ofrecen funciones de sitio web y otros productos y servicios cuando visita o compra en Amazon.com.mx, utiliza los productos o servicios de Amazon, usa las aplicaciones de Amazon para dispositivos móviles o emplea software puesto a disposición por Amazon en relación con lo anterior (colectivamente, los "Servicios de Amazon"). Amazon le presta los Servicios de Amazon bajo las siguientes condiciones.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Aceptación de las Condiciones</h2>
+        <p>Al utilizar los Servicios de Amazon, usted acepta estas condiciones. Le rogamos que las lea detenidamente.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Privacidad</h2>
+        <p>Le rogamos que revise nuestro Aviso de Privacidad que también rige el uso que realice de los Servicios de Amazon, para que conozca nuestras prácticas.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Derechos de Autor</h2>
+        <p>Todo contenido alojado o puesto a disposición a través de cualquiera de los Servicios de Amazon, como por ejemplo texto, gráficos, logotipos, iconos de botones, imágenes, clips de audio, descargas digitales, y recopilaciones de datos son propiedad de Amazon o de sus proveedores de contenido y está protegido por las leyes internacionales y de los Estados Unidos de América de propiedad intelectual.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Marcas</h2>
+        <p>Puede consultar un listado (no exhaustivo) de las marcas de Amazon en el siguiente enlace. De forma adicional, los gráficos, logotipos, encabezados de página, iconos de botón, scripts y nombres de servicio que aparecen incluidos o están disponibles a través de los Servicios de Amazon son marcas o representan la imagen comercial de Amazon en los Estados Unidos de América y otros países.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Licencia y Acceso</h2>
+        <p>Sujeto al cumplimiento por parte de usted de estas Condiciones de Uso y las Condiciones Generales de los Servicios aplicables, así como al pago del precio aplicable, en su caso, Amazon o sus proveedores de contenidos le conceden una licencia limitada no exclusiva, no transferible y no sub-licenciable, de acceso y utilización, a los Servicios de Amazon para fines personales no comerciales.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Su Cuenta</h2>
+        <p>Es posible que usted requiera crear una cuenta de Amazon propia, acceder a la misma y contar con un método de pago válido asociado a su cuenta para utilizar ciertos Servicios de Amazon. En caso de que surja un problema con su método de pago seleccionado, podríamos realizar el cargo a cualquier otro método de pago válido asociado a su cuenta.</p>
+    </section>
+</main>
   <!-- footer -->
   <div class="navLeftFooter nav-sprite-v1" id="navFooter">
     <a href="{{ url('/') }}" id="navBackToTop" aria-label="Inicio de página">

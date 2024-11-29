@@ -222,384 +222,101 @@
       
     </header>    
 </nav>
-    <!-- Carrusel -->
-    <div class="carousel">
-        <div class="carousel-inner">
-          <img src="./img/libro.jpg" alt="Imagen 1">
-          <img src="./img/juguete.jpg" alt="Imagen 2">
-          <img src="./img/cocina.jpg" alt="Imagen 3">
-        </div>
-      </div>
         <!-- Loader -->
   <div class="loader" id="loader">
     <div class="spinner-border text-primary" role="status">
       <span class="sr-only">Cargando...</span>
     </div>
   </div>
-      <div class="main-container">
-        <div class="container">
-          <div class="section-container">
-            <div class="container">
-              <div class="table-container">
-                <!-- Sección 1: Ofertas en tendencia -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/anuncios.png" alt="Anuncio" class="custom-size">                 
-                  </div>
-                  <div style="text-align: center;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 2: Accesorios para gamers -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Accesorios para gamers a 24 meses</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/nintendo.jpg" alt="Nintendo" class="img-fluid">
-                    <p>Nintendo</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                      <img src="./img/playstation.jpg" alt="Playstation" class="img-fluid">
-                      <p>Playstation</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/xbox.jpg" alt="Xbox" class="img-fluid">
-                      <p>Xbox</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/pc.jpg" alt="PC" class="img-fluid">
-                      <p>PC</p>
-                    </div>
-                  </div>
-                  <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 3: Productos para Halloween -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
-                    <p>Todos los Productos</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                      <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
-                      <p>Disfraces</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
-                      <p>Accesorios</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
-                      <p>Decoracion</p>
-                    </div>
-                  </div>
-                  <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 4: Inicia sesión -->
-                <div class="section text-center">
-                  <h5 class="section-title">Inicia sesión para vivir tu mejor experiencia</h5>
-                  <form action="{{ route('login') }}" method="GET">
-                    <button type="submit" class="btn-seguro">Iniciar sesión de forma segura</button>
-                  </form>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <style>
-      .table-container {
-        margin: 0;
-        padding: 0;
-      }
-      .table td, .table th {
-        padding: 5px;
-      }
-      .img-fluid {
-        max-width: 100%;
-        height: auto;
-      }
-      .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-      }
-      .section-title {
-        font-weight: bold;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      </style>
-        <div class="main-container">
-          <div class="container">
-            <div class="section-container">
-              <div class="container">
-                <div class="table-container">
-                  <!-- Sección 1: Ofertas en tendencia -->
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Hasta 25% en audífonos y bocinas</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/audifono_inalambricos.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Audifono inalambricos</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/in_ear.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>In Ear</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/on-ear.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>On Ear</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/adaptadores.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Adaptadores</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-        
-                  <!-- Repite las secciones adicionales aquí... -->
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Ahorra en tus marcas favoritas</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/apple.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Apple</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/samsung.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Samsung</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/huawei.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Huawei</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/xiaomi.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Xiaomi</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Tus juguetes favoritos a 24 meses</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/juguetes.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Juguetes</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/pokemon.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Pokemon</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/hot_wheels.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Hot Wheels</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/yugioh.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Yugioh</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Ofertas por la Semana del Auto</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/auto_moto.jpg" loading="lazy" alt="Nintendo" class="img-fluid">
-                      <p>Todos para auto y moto</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/cuidado.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Cuidado</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/aceites.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Aceites</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/llantas.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Llantas</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- metodo de pago -->
-        <style>
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .container {
-            margin: 0;
-            padding: 0;
-          }
-          .table-container {
-            margin: 0;
-            padding: 0;
-          }
-          .table td, .table th {
-            padding: 5px;
-          }
-          .img-fluid {
-            max-width: 100%;
-            height: auto;
-          }
-          .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-          }
-          .section-title {
-            font-weight: bold;
-          }
-          .section {
-            margin-bottom: 10px;
-            margin-bottom: 20px;
-          }
-          </style>
-          <style>
+  <style>
         body {
             font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-        .payment-section {
-            width: 80%;
-            max-width: 800px;
-            margin: 30px auto;
+        header {
+            background-color: #232f3e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
             padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background-color: white;
         }
-        .payment-section h2 {
-            text-align: center;
-            color: #333;
+        h1, h2 {
+            color: #232f3e;
         }
-        .payment-section p {
-            text-align: center;
-            color: #666;
+        p {
+            margin: 20px 0;
         }
-        .payment-methods {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .payment-method {
-            text-align: center;
-            margin: 10px;
-        }
-        .payment-method img {
-            width: 60px;
-            height: auto;
-        }
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container, .table-container {
-            margin: 0;
-            padding: 0;
-        }
-        .table td, .table th {
-            padding: 5px;
-        }
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-        .section-title {
-            font-weight: bold;
-        }
-        .section {
+        .content-section {
             margin-bottom: 20px;
         }
-    </style></style>
+    </style>
 </head>
 <body>
-    <div class="payment-section">
-        <h2>Descubre nuestros Métodos de Pago</h2>
-        <p>Conoce las opciones que ofrecemos para realizar tus pagos de forma segura y conveniente.</p>
-        <div class="payment-methods">
-            <div class="payment-method">
-                <img src="./img/visa.png" alt="Visa" loading="lazy" class="img-fluid">
-                <p>Visa</p>
-            </div>
-            <div class="payment-method">
-                <img src="./img/mastercard.png" alt="MasterCard" loading="lazy" class="img-fluid">
-                <p>MasterCard </p>
-              </div>
-            <div class="payment-method">
-                <img src="./img/Amex.png" alt="American Express" loading="lazy" class="img-fluid">
-                <p>American Express</p>
-            </div>
-            <div class="payment-method">
-                <img src="./img/PayPal.png" alt="PayPal" loading="lazy" class="img-fluid">
-                <p>PayPal</p>
-            </div>
-        </div>
-    </div>
-      </div>
-    </div>
-  </div>
+
+<header>
+    <h1>Aviso de Privacidad</h1>
+</header>
+
+<main>
+    <section class="content-section">
+        <h2>Última actualización: 4 de octubre de 2024.</h2>
+        <p>Para ver la versión anterior, haga clic <a href="#">aquí</a>.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Introducción</h2>
+        <p>Estamos conscientes de la importancia que tiene para usted saber cómo utilizamos sus datos personales y le agradecemos que confíe que lo haremos con cuidado y sensatez. Este Aviso de Privacidad describe la forma en que Servicios Comerciales Amazon México, S. de R.L. de C.V., y sus filiales (conjuntamente "Amazon") recopilan y tratan sus datos personales a través de los sitios web, dispositivos, productos, servicios, tiendas en línea y aplicaciones de Amazon que hacen referencia a este Aviso de Privacidad (conjuntamente "Servicios de Amazon"). Al utilizar los Servicios de Amazon, usted está dando su consentimiento a las prácticas descritas en este Aviso de Privacidad.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>Datos de Contacto</h2>
+        <p>Si tiene preguntas sobre como recabamos y usamos sus datos personales o sobre este aviso de privacidad, por favor póngase en contacto con nosotros. Nuestros datos de contacto son:</p>
+        <p>Dirección: Blvd. Manuel Ávila Camacho 261, 5° piso, Colonia Polanco, Alcaldía Miguel Hidalgo, C.P. 11510, Ciudad de México.</p>
+        <p>Correo electrónico: <a href="mailto:protecciondedatos@amazon.com.mx">protecciondedatos@amazon.com.mx</a></p>
+        <p>Atención: Responsable del Departamento de Datos</p>
+        <p>Si tiene preguntas sobre su cuenta o sus pedidos, por favor contacte al Servicio de Atención al Cliente haciendo clic <a href="#">aquí</a> o enviando un correo electrónico a la siguiente dirección: <a href="mailto:primary@amazon.com.mx">primary@amazon.com.mx</a>.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>¿Qué Datos Personales Recaba Amazon?</h2>
+        <p>Recopilamos sus datos personales con el fin de proporcionar y mejorar continuamente nuestros productos y servicios. Los tipos de datos que recabamos incluyen:</p>
+        <ul>
+            <li><strong>Datos que Usted Nos Proporciona:</strong> Recibimos y almacenamos todos los datos que usted nos proporciona en relación con los Servicios de Amazon.</li>
+            <li><strong>Datos Automáticos:</strong> Recopilamos y almacenamos automáticamente determinados tipos de datos acerca de su uso de los Servicios de Amazon.</li>
+            <li><strong>Datos de Otras Fuentes:</strong> Recibimos datos de otras fuentes, como información actualizada de entrega y dirección.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>¿Con Qué Fines Utiliza Amazon sus Datos Personales?</h2>
+        <p>Utilizamos sus datos personales para operar, proporcionar, desarrollar y mejorar los productos y servicios que ofrecemos a nuestros clientes. Los fines principales incluyen:</p>
+        <ul>
+            <li>Compra y entrega de productos y servicios.</li>
+            <li>Proporcionar, solucionar problemas y mejorar los Servicios de Amazon.</li>
+            <li>Recomendaciones y personalización.</li>
+            <li>Proporcionar servicios de voz, imagen y cámara.</li>
+            <li>Cumplir con nuestras obligaciones legales.</li>
+            <li>Comunicarnos con usted.</li>
+            <li>Prevención de fraude y riesgos de crédito.</li>
+        </ul>
+    </section>
+
+    <section class="content-section">
+        <h2>Publicidad y Marketing</h2>
+        <p>Utilizamos sus datos personales para mostrar anuncios basados en sus intereses y para enviarle correos electrónicos u otras comunicaciones sobre productos y servicios que puedan ser de su interés. Si no desea recibir correos electrónicos, puede ajustar sus preferencias de comunicación.</p>
+    </section>
+
+    <section class="content-section">
+        <h2>¿Cómo Ejercer Mis Derechos ARCO?</h2>
+        <p>Usted puede ejercer sus derechos ARCO (Acceso, Rectificación, Cancelación y Oposición) sobre sus datos personales de acuerdo con lo establecido en la legislación aplicable.</p>
+    </section>
+</main>
   <!-- footer -->
   <div class="navLeftFooter nav-sprite-v1" id="navFooter">
     <a href="{{ url('/') }}" id="navBackToTop" aria-label="Inicio de página">

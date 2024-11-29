@@ -727,7 +727,7 @@
       
       
     <div class="navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright navFooterLineDivider">
-      <ul><li class="nav_first"><a href="condiciones" id="" class="nav_a">Condiciones de uso</a> </li><li class="nav_last"><a href="privacidad" id="" class="nav_a">Aviso de privacidad</a> </li></ul><span>© 1996-2024, Amazon.com, Inc. o sus afiliados</span>
+      <ul><li class="nav_first"><a href="/gp/help/customer/display.html?nodeId=508088&amp;ref_=footer_cou" id="" class="nav_a">Condiciones de uso</a> </li><li class="nav_last"><a href="/gp/help/customer/display.html?nodeId=468496&amp;ref_=footer_privacy" id="" class="nav_a">Aviso de privacidad</a> </li></ul><span>© 1996-2024, Amazon.com, Inc. o sus afiliados</span>
     </div>
     </div>
 </body>
