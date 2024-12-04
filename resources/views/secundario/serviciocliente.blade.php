@@ -228,86 +228,142 @@
       <span class="sr-only">Cargando...</span>
     </div>
   </div>
-  ¿Necesitas ayuda con un producto reciente, paola?
-  Selecciona el producto con el que necesitas ayuda a continuación u obtén ayuda con otra cosa.
-  <div class="row row-cols-1 row-cols-md-2 g-4">
-  <!-- Pedido 1 -->
-  <div class="col">
-    <div class="card">
-      <img src="./img/regulador.jpg" class="card-img-top" alt="Koblenz REGULADOR">
-      <div class="card-body">
-        <h5 class="card-title">Koblenz REGULADOR RS-1410</h5>
-        <p class="card-text">
-          1410 VA / 700 Watts (SUSTITUTO del RE-110), 8 Cont REGULADOS Y ATERRIZADOS, DESC EN Alto Voltaje, Interruptor EN Encendido Y APAG DE Uso RUDO, 108-132 V, Garantia 2 AÑOS.
-        </p>
-        <small class="text-muted">Pedido el 11 nov 2024</small>
-      </div>
-    </div>
-  </div>
+  <style>
+    .spinner-border {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
 
-  <!-- Pedido 2 -->
-  <div class="col">
-    <div class="card">
-      <img src="./img/capturadora.jpg" class="card-img-top" alt="Yostyle Capturadora">
-      <div class="card-body">
-        <h5 class="card-title">Yostyle Capturadora de Video HDMI a USB 2.0</h5>
-        <p class="card-text">
-          Convertidor Video Audio Game Capture 1080P 60FPS, Tarjeta de Captura para Transmisión, Transmisión en Vivo, Videoconferencias, Enseñanza, Juegos.
-        </p>
-        <small class="text-muted">Pedido el 11 nov 2024</small>
-      </div>
-    </div>
-  </div>
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
 
-  <!-- Pedido 3 -->
-  <div class="col">
-    <div class="card">
-      <img src="./img/webcam.jpg" class="card-img-top" alt="Salandens Webcam">
-      <div class="card-body">
-        <h5 class="card-title">Salandens Webcam con micrófono</h5>
-        <p class="card-text">
-          Cámara Web HD 1080p, cámara Web para Ordenador, Enfoque automático Plug and Play, cámara USB para Ordenador portátil, PC/Mac, Estudio en línea, Videollamadas, Grabación.
-        </p>
-        <small class="text-muted">Pedido el 10 nov 2024</small>
-      </div>
-    </div>
-  </div>
+    .container {
+      text-align: center;
+      padding: 20px;
+      display: none; /* Ocultamos el contenido hasta que termine el loader */
+    }
 
-  <!-- Pedido 4 -->
-  <div class="col">
-    <div class="card">
-      <img src="./img/zelda.jpg" class="card-img-top" alt="Zelda Tears of the Kingdom">
-      <div class="card-body">
-        <h5 class="card-title">The Legend of Zelda: Tears of the Kingdom</h5>
-        <p class="card-text">Nintendo Switch</p>
-        <small class="text-muted">Pedido el 13 abr 2024</small>
-      </div>
-    </div>
-  </div>
+    .promo-content {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
 
-  <!-- Pedido 5 -->
-  <div class="col">
-    <div class="card">
-      <img src="./img/libropsi.jpg" class="card-img-top" alt="El hombre en busca de sentido">
-      <div class="card-body">
-        <h5 class="card-title">El hombre en busca de sentido</h5>
-        <small class="text-muted">Pedido el 29 oct 2023</small>
-      </div>
-    </div>
-  </div>
+    .promo-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
 
-  <!-- Pedido 6 -->
-  <div class="col">
-    <div class="card">
-      <img src="./img/mario.jpg" class="card-img-top" alt="Super Mario Odyssey">
-      <div class="card-body">
-        <h5 class="card-title">Super Mario Odyssey - Standard Edition</h5>
-        <p class="card-text">Nintendo Switch</p>
-        <small class="text-muted">Pedido el 23 sep 2023</small>
+    .cta-text h1 {
+      font-size: 24px;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    .cta-text p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #ffa41c;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-button:hover {
+      background-color: #ff8c00;
+      transition: background-color 0.3s ease;
+    }
+
+    .product-list {
+      margin-top: 30px;
+      text-align: left;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .product-item:last-child {
+      border-bottom: none;
+    }
+
+    .product-name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .product-details {
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+    <!-- Lista de productos -->
+    <div class="product-list">
+      <h2>Productos recientes</h2>
+      <div class="product-item">
+        <img src="./img/regulador.jpg" alt="Anuncio">
+        <p class="product-name">Koblenz REGULADOR RS-1410</p>
+        <p class="product-details">1410 VA / 700 Watts, Pedido el 11 nov 2024</p>
+      </div>
+      <div class="product-item">
+      <img src="./img/capturadora.jpg" alt="Anuncio">
+        <p class="product-name">Yostyle Capturadora de Video HDMI</p>
+        <p class="product-details">Convertidor Video Audio, Pedido el 11 nov 2024</p>
+      </div>
+      <div class="product-item">
+      <img src="./img/webcam.jpg" alt="Anuncio">
+        <p class="product-name">Salandens Webcam</p>
+        <p class="product-details">Cámara Web HD 1080p, Pedido el 10 nov 2024</p>
+      </div>
+      <div class="product-item">
+      <img src="./img/zelda.jpg" alt="Anuncio">
+        <p class="product-name">The Legend of Zelda: Tears of the Kingdom</p>
+        <p class="product-details">Nintendo Switch, Pedido el 13 abr 2024</p>
+      </div>
+      <div class="product-item">
+      <img src="./img/libropsi.jpg" alt="Anuncio">
+        <p class="product-name">El hombre en busca de sentido</p>
+        <p class="product-details">Pedido el 29 oct 2023</p>
+      </div>
+      <div class="product-item">
+      <img src="./img/mario.jpg" alt="Anuncio">
+        <p class="product-name">Super Mario Odyssey</p>
+        <p class="product-details">Nintendo Switch, Pedido el 23 sep 2023</p>
       </div>
     </div>
   </div>
-</div>
 
   <!-- footer -->
   <div class="navLeftFooter nav-sprite-v1" id="navFooter">

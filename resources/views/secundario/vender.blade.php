@@ -222,384 +222,119 @@
       
     </header>    
 </nav>
-    <!-- Carrusel -->
-    <div class="carousel">
-        <div class="carousel-inner">
-          <img src="./img/libro.jpg" alt="Imagen 1">
-          <img src="./img/juguete.jpg" alt="Imagen 2">
-          <img src="./img/cocina.jpg" alt="Imagen 3">
-        </div>
-      </div>
-        <!-- Loader -->
+<style>
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .spinner-border {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #007bff;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      display: none; /* Ocultamos el contenido hasta que termine el loader */
+    }
+
+    .promo-content {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .promo-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .cta-text h1 {
+      font-size: 24px;
+      color: #333;
+      margin: 20px 0;
+    }
+
+    .cta-text p {
+      font-size: 18px;
+      color: #666;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #ffa41c;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta-button:hover {
+      background-color: #ff8c00;
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <!-- Loader -->
   <div class="loader" id="loader">
     <div class="spinner-border text-primary" role="status">
       <span class="sr-only">Cargando...</span>
     </div>
   </div>
-      <div class="main-container">
-        <div class="container">
-          <div class="section-container">
-            <div class="container">
-              <div class="table-container">
-                <!-- Sección 1: Ofertas en tendencia -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Ofertas en tendencia</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/anuncios.png" alt="Anuncio" class="custom-size">                 
-                  </div>
-                  <div style="text-align: center;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 2: Accesorios para gamers -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Accesorios para gamers a 24 meses</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/nintendo.jpg" alt="Nintendo" class="img-fluid">
-                    <p>Nintendo</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                      <img src="./img/playstation.jpg" alt="Playstation" class="img-fluid">
-                      <p>Playstation</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/xbox.jpg" alt="Xbox" class="img-fluid">
-                      <p>Xbox</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/pc.jpg" alt="PC" class="img-fluid">
-                      <p>PC</p>
-                    </div>
-                  </div>
-                  <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 3: Productos para Halloween -->
-                <div class="section">
-                  <h5 class="section-title" style="text-align: center;">Hasta 20% en productos para Halloween</h5>
-                  <div style="text-align: center;">
-                    <img src="./img/disfras.jpg" alt="Nintendo" class="img-fluid">
-                    <p>Todos los Productos</p>
-                  </div>
-                  <div style="display: flex; justify-content: space-around; align-items: center;">
-                    <div style="text-align: center;">
-                      <img src="./img/disfraces.jpg" alt="Playstation" class="img-fluid">
-                      <p>Disfraces</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/accesorios.jpg" alt="Xbox" class="img-fluid">
-                      <p>Accesorios</p>
-                    </div>
-                    <div style="text-align: center;">
-                      <img src="./img/decoracion.jpg" alt="PC" class="img-fluid">
-                      <p>Decoracion</p>
-                    </div>
-                  </div>
-                  <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                  </div>
-                </div>
-      
-                <!-- Sección 4: Inicia sesión -->
-                <div class="section text-center">
-                  <h5 class="section-title">Inicia sesión para vivir tu mejor experiencia</h5>
-                  <form action="{{ route('login') }}" method="GET">
-                    <button type="submit" class="btn-seguro">Iniciar sesión de forma segura</button>
-                  </form>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <style>
-      .table-container {
-        margin: 0;
-        padding: 0;
-      }
-      .table td, .table th {
-        padding: 5px;
-      }
-      .img-fluid {
-        max-width: 100%;
-        height: auto;
-      }
-      .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-      }
-      .section-title {
-        font-weight: bold;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      </style>
-        <div class="main-container">
-          <div class="container">
-            <div class="section-container">
-              <div class="container">
-                <div class="table-container">
-                  <!-- Sección 1: Ofertas en tendencia -->
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Hasta 25% en audífonos y bocinas</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/audifono_inalambricos.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Audifono inalambricos</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/in_ear.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>In Ear</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/on-ear.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>On Ear</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/adaptadores.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Adaptadores</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-        
-                  <!-- Repite las secciones adicionales aquí... -->
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Ahorra en tus marcas favoritas</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/apple.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Apple</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/samsung.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Samsung</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/huawei.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Huawei</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/xiaomi.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Xiaomi</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Tus juguetes favoritos a 24 meses</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/juguetes.jpg" alt="Nintendo" loading="lazy" class="img-fluid">
-                      <p>Juguetes</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/pokemon.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Pokemon</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/hot_wheels.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Hot Wheels</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/yugioh.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Yugioh</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                  <div class="section">
-                    <h5 class="section-title" style="text-align: center;">Ofertas por la Semana del Auto</h5>
-                    <!-- Imagen de disfraz -->
-                    <div style="text-align: center;">
-                      <img src="./img/auto_moto.jpg" loading="lazy" alt="Nintendo" class="img-fluid">
-                      <p>Todos para auto y moto</p>
-                    </div>
-                    <!-- Contenedor para Playstation, Xbox y PC -->
-                    <div style="display: flex; justify-content: space-around; align-items: center;">
-                      <!-- Imagen de Playstation -->
-                      <div style="text-align: center;">
-                        <img src="./img/cuidado.jpg" alt="Playstation" loading="lazy" class="img-fluid">
-                        <p>Cuidado</p>
-                      </div>
-                      <!-- Imagen de Xbox -->
-                      <div style="text-align: center;">
-                        <img src="./img/aceites.jpg" alt="Xbox" loading="lazy" class="img-fluid">
-                        <p>Aceites</p>
-                      </div>
-                      <!-- Imagen de PC -->
-                      <div style="text-align: center;">
-                        <img src="./img/llantas.jpg" alt="PC" loading="lazy" class="img-fluid">
-                        <p>Llantas</p>
-                      </div>
-                    </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- metodo de pago -->
-        <style>
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .container {
-            margin: 0;
-            padding: 0;
-          }
-          .table-container {
-            margin: 0;
-            padding: 0;
-          }
-          .table td, .table th {
-            padding: 5px;
-          }
-          .img-fluid {
-            max-width: 100%;
-            height: auto;
-          }
-          .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-          }
-          .section-title {
-            font-weight: bold;
-          }
-          .section {
-            margin-bottom: 10px;
-            margin-bottom: 20px;
-          }
-          </style>
-          <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .payment-section {
-            width: 80%;
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .payment-section h2 {
-            text-align: center;
-            color: #333;
-        }
-        .payment-section p {
-            text-align: center;
-            color: #666;
-        }
-        .payment-methods {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .payment-method {
-            text-align: center;
-            margin: 10px;
-        }
-        .payment-method img {
-            width: 60px;
-            height: auto;
-        }
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container, .table-container {
-            margin: 0;
-            padding: 0;
-        }
-        .table td, .table th {
-            padding: 5px;
-        }
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border-color: #007bff;
-        }
-        .section-title {
-            font-weight: bold;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-    </style></style>
-</head>
-<body>
-    <div class="payment-section">
-        <h2>Descubre nuestros Métodos de Pago</h2>
-        <p>Conoce las opciones que ofrecemos para realizar tus pagos de forma segura y conveniente.</p>
-        <div class="payment-methods">
-            <div class="payment-method">
-                <img src="./img/visa.png" alt="Visa" loading="lazy" class="img-fluid">
-                <p>Visa</p>
-            </div>
-            <div class="payment-method">
-                <img src="./img/mastercard.png" alt="MasterCard" loading="lazy" class="img-fluid">
-                <p>MasterCard </p>
-              </div>
-            <div class="payment-method">
-                <img src="./img/Amex.png" alt="American Express" loading="lazy" class="img-fluid">
-                <p>American Express</p>
-            </div>
-            <div class="payment-method">
-                <img src="./img/PayPal.png" alt="PayPal" loading="lazy" class="img-fluid">
-                <p>PayPal</p>
-            </div>
-        </div>
-    </div>
+
+  <!-- Contenido principal -->
+  <div class="container" id="main-content">
+    <div class="promo-content">
+      <img src="./img/vender.png" alt="Promoción de Amazon" class="promo-image">
+      <div class="cta-text">
+        <h1>Regístrate hoy y no pagues tarifa mensual por 1 año</h1>
+        <p>Empieza a vender en Amazon de forma rápida, fácil y segura.</p>
+        <a href="#" class="cta-button">Empieza a vender</a>
       </div>
     </div>
   </div>
+
+  <script>
+    window.addEventListener('load', function () {
+        const loader = document.getElementById('loader');
+        const mainContent = document.getElementById('main-content');
+        
+        // Ocultamos el loader tan pronto como el contenido está listo
+        loader.style.display = 'none';
+        mainContent.style.display = 'block';
+    });
+</script>
+
   <!-- footer -->
   <div class="navLeftFooter nav-sprite-v1" id="navFooter">
     <a href="{{ url('/') }}" id="navBackToTop" aria-label="Inicio de página">

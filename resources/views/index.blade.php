@@ -64,7 +64,7 @@
                   <a>
                   <form class="form-inline">
                     <input class="form-control" type="text" placeholder="Buscar Amazon.com.mx" aria-label="Buscar">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    <button class="btn btn-outline-light" type="submit">🔍</button>
                   </form>
                 </a>
               </div>
@@ -203,6 +203,23 @@
                     <e href="#">los mas vendidos</e>
                     <e href="#">lo nuevo</e>
                     <e href="#">productos del momento</e>
+                    <br>
+                    <h5 class="section-title" style="text-align:left;">Contenido y dispositivos digitales</h5>
+                    <e href="#">amazon prime video</e>
+                    <e href="#">echo y alexa</e>
+                    <e href="#">amazon music</e>
+                    <e href="#">amazon fire tv</e>
+                    <e href="#">e-readers y ebooks kinder</e>
+                    <h5 class="section-title" style="text-align:left;">Buscar por categoría</h5>
+                    <e href="#">alimento y bebida</e>
+                    <e href="#">libro</e>
+                    <e href="#">pelicula,serie de tv y musica</e>
+                    <e href="#">electronico</e>
+                    <e href="#">ver mas</e>
+                    <h5 class="section-title" style="text-align:left;">Ayuda y configuración</h5>
+                    <e href="#">mi cuenta</e>
+                    <e href="#">ayuda</e>
+                    <e href="login">salir</e>
                   </div>
                   <a href="vender">Vender</a>
                   <a href="masvendidos">Lo más vendido</a>
@@ -212,7 +229,7 @@
                   <a href="musica">Música</a>
                   <a href="lonuevo">Lo nuevo</a>
                   <a href="outlet">Outlet</a>
-                  <a href="lonuevo">Lo más regalado</a>
+                  <a href="masregalado">Lo más regalado</a>
                   <a href="hogar">Hogar y Cocina</a>
                   <a href="electronico">Electrónicos</a>
                   <a href="serviciocliente">Servicio al cliente</a>
@@ -228,6 +245,7 @@
           <img src="./img/libro.jpg" alt="Imagen 1">
           <img src="./img/juguete.jpg" alt="Imagen 2">
           <img src="./img/cocina.jpg" alt="Imagen 3">
+          <img src="./img/friday.black.jpg" alt="Imagen 4">
         </div>
       </div>
         <!-- Loader -->

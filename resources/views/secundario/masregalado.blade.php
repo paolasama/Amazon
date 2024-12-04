@@ -212,7 +212,7 @@
                   <a href="musica">Música</a>
                   <a href="lonuevo">Lo nuevo</a>
                   <a href="outlet">Outlet</a>
-                  <a href="lonuevo">Lo más regalado</a>
+                  <a href="masregalado">Lo más regalado</a>
                   <a href="hogar">Hogar y Cocina</a>
                   <a href="electronico">Electrónicos</a>
                   <a href="serviciocliente">Servicio al cliente</a>
