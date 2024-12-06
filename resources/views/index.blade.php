@@ -29,11 +29,15 @@
             }
           });
 
-          function showPosition(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            alert(`Tu ubicación actual es:\nLatitud: ${latitude}\nLongitud: ${longitude}`);
-          }
+          function showPosition(position) { 
+            const latitude = position.coords.latitude; 
+            const longitude = position.coords.longitude; 
+            fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`) 
+              .then(response => response.json()) 
+              .then(data => { const postalCode = data.address.postcode; 
+                alert(`Tu código postal es: ${postalCode}`); }) 
+              .catch(error => console.error('Error:', error)); 
+            }
 
           function showError(error) {
             switch(error.code) {

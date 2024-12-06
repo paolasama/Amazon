@@ -298,3 +298,5 @@ body {
   text-align: center;
   margin-top: 20px;
 }
+
+.btn-seguro { padding: 10px 20px; background-color: #ffa41c; color: #fff; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s ease; } .btn-seguro:hover { background-color: #ff8c00;}
