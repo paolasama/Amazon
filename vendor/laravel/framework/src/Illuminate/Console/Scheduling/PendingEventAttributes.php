@@ -18,12 +18,33 @@ class PendingEventAttributes
     }
 
     /**
+     * Do not allow the event to overlap each other.
+     *
+     * The expiration time of the underlying cache lock may be specified in minutes.
+     *
+     * @param  int  $expiresAt
+     * @return $this
+     */
+    public function withoutOverlapping($expiresAt = 1440)
+    {
+        $this->withoutOverlapping = true;
+
+        $this->expiresAt = $expiresAt;
+
+        return $this;
+    }
+
+    /**
      * Merge the current attributes into the given event.
      */
     public function mergeAttributes(Event $event): void
     {
         $event->expression = $this->expression;
         $event->repeatSeconds = $this->repeatSeconds;
+
+        if ($this->description !== null) {
+            $event->name($this->description);
+        }
 
         if ($this->timezone !== null) {
             $event->timezone($this->timezone);
