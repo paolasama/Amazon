@@ -246,7 +246,33 @@
             <img src="https://img.icons8.com/ios/452/shopping-cart.png" alt="Carrito vacío">
             <h3>Tu carrito está vacío</h3>
             <p>Parece que no tienes productos en tu carrito de compras. ¿Te gustaría explorar más artículos?</p>
-            <a href="/tienda" class="btn btn-primary btn-custom">Volver a la tienda</a>
+            <a href="http://127.0.0.1:8000/" class="btn btn-primary btn-custom">Volver a la tienda</a>
+
+<style>
+  .btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .btn-custom:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.05);
+  }
+
+  .btn-custom:active {
+    transform: scale(0.98);
+  }
+</style>
+
         </div>
     </div>
 </body>

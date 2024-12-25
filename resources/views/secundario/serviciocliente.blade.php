@@ -1,499 +1,172 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazon.com.mx</title>
-    <link rel="icon" href="./img/icon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="{{ asset('css/estilo.css') }}">
-    <script src="{{ asset('js/funciones.js') }}"></script>
-</head>
-<body>
-    <header>
-        <div class="navbar">
-        <a class="navbar-brand" href="{{ url('/') }}">
-          <img src="{{ asset('img/amazon-logo.png') }}" alt="Logo de Amazon">
-        </a>
+    <title>Servicio al Cliente</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
 
-        <button class="btn-seguro" id="ubicacion-btn">Ubicación</button>
-        <script>
-          // Selecciona el botón usando su ID
-          const ubicacionBtn = document.getElementById('ubicacion-btn');
+        /* Header */
+        .header {
+            background-color: #232f3e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+        }
+        .header p {
+            font-size: 1.2em;
+        }
 
-          // Agrega un evento de clic al botón
-          ubicacionBtn.addEventListener('click', function() {
-            if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(showPosition, showError);
-            } else {
-              alert("La geolocalización no es soportada por este navegador.");
-            }
-          });
+        /* Main content */
+        .main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-          function showPosition(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            alert(`Tu ubicación actual es:\nLatitud: ${latitude}\nLongitud: ${longitude}`);
-          }
+        .main h2 {
+            margin-bottom: 20px;
+            color: #232f3e;
+        }
 
-          function showError(error) {
-            switch(error.code) {
-              case error.PERMISSION_DENIED:
-                alert("El usuario negó el permiso para acceder a la ubicación.");
-                break;
-              case error.POSITION_UNAVAILABLE:
-                alert("La información de la ubicación no está disponible.");
-                break;
-              case error.TIMEOUT:
-                alert("El tiempo de espera para obtener la ubicación se agotó.");
-                break;
-              case error.UNKNOWN_ERROR:
-                alert("Ocurrió un error desconocido.");
-                break;
-            }
-          }
-        </script>
-            <div class="navbar">
-                <a class="nav-item">
-                  <select class="custom-select">
-                    <option value="all">Todas las categorías</option>
-                    <option value="electronics">Electrónicos</option>
-                    <option value="toys">Juguetes</option>
-                    <option value="home">Hogar y Cocina</option>
-                    <option value="books">Libros</option>
-                  </select>
-                  <a>
-                  <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="Buscar Amazon.com.mx" aria-label="Buscar">
-                    <button class="btn btn-outline-light" type="submit">Buscar</button>
-                  </form>
-                </a>
-              </div>
-              <div class="menu">
-                    <button class="menu-button">Hola, identifícate. Cuenta y listas</button>
-                    <div class="dropdown-content">
-                      <a href="login" class="btn-seguro">Identifícate</a>
-                      <p>¿Eres un cliente nuevo? <a href="register">Empieza aquí</a></p>
-                      <table class="table table-bordered">
-                        <tbody>
-                          <tr>
-                            <!-- Columna "Mis listas" -->
-                            <td>
-                              <h4>Mis listas</h4>
-                              <a href="#">Crear una lista de deseos</a><br>
-                              <a href="#">Lista de bodas</a><br>
-                              <a href="#">Lista de Nacimiento</a><br>
-                              <a href="#">Descubre tu estilo</a><br>
-                              <a href="#">Explorar Showroom</a>
-                            </td>
-                            <!-- Línea vertical separadora -->
-                            <td class="divider">
-                              <h4>Mi cuenta</h4>
-                              <a href="#">Mi cuenta</a><br>
-                              <a href="#">Mis pedidos</a><br>
-                              <a href="#">Tu cuenta de vendedor</a><br>
-                              <a href="#">Mi lista de deseos</a><br>
-                              <a href="#">Mis recomendaciones</a><br>
-                              <a href="#">Mi suscripción a Amazon Prime</a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+        .faq {
+            margin-bottom: 20px;
+        }
+        .faq h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1a73e8;
+        }
+        .faq p {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
 
-                  <!-- Estilos CSS para el menú flotante -->
-                  <style>
-                    /* Estilo de la tabla */
-                    table {
-                      width: 100%;
-                      border-spacing: 20px;
-                    }
+        /* Contact Section */
+        .contact {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #232f3e;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .contact input,
+        .contact textarea,
+        .contact button {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .contact textarea {
+            resize: none;
+            height: 100px;
+        }
+        .contact button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact button:hover {
+            background-color: #005bb5;
+        }
 
-                    /* Estilo de las celdas */
-                    td {
-                      vertical-align: top;
-                    }
-
-                    /* Línea vertical divisora */
-                    .divider {
-                      border-left: 2px solid black;
-                      padding-left: 20px;
-                    }
-
-                    /* Contenedor del menú */
-                    .menu {
-                      position: relative;
-                      display: inline-block;
-                    }
-
-                    /* Estilo del botón */
-                    .menu-button {
-                      background-color: #232F3E; /* Un color oscuro más similar al de Amazon */
-                      color: white; /* Texto en blanco */
-                      padding: 10px 20px;
-                      font-size: 16px;
-                      border: none;
-                      cursor: pointer;
-                      font-family: Arial, sans-serif;
-                      transition: background-color 0.3s ease; /* Transición suave para el hover */
-                    }
-                    h4{
-                      color: black;
-                    }
-
-                    /* Estilo del botón al pasar el ratón */
-                    .menu-button:hover {
-                      background-color: #1a202c; /* Un tono más oscuro para el hover */
-                    }
-
-                    /* Contenido del menú desplegable */
-                    .dropdown-content {
-                      display: none;
-                      position: absolute;
-                      background-color: white;
-                      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-                      padding: 12px;
-                      min-width: 300px;
-                      z-index: 1;
-                      transition: opacity 0.3s ease; /* Transición para la visibilidad */
-                    }
-
-                    /* Estilo para las opciones del menú */
-                    .dropdown-content a,
-                    .dropdown-content p {
-                      color: #333; /* Texto en negro */
-                      padding: 8px 12px;
-                      text-decoration: none;
-                      display: block;
-                    }
-
-                    /* Hover para los enlaces dentro del menú */
-                    .dropdown-content a:hover,
-                    .dropdown-content p:hover {
-                      background-color: #f1f1f1; /* Fondo gris claro al pasar el ratón */
-                    }
-
-                    /* Mostrar el contenido del menú al pasar el ratón */
-                    .menu:hover .dropdown-content {
-                      display: block;
-                      opacity: 1;
-                    }
-
-                    /* Mejora de la visibilidad en el hover del menú */
-                    .dropdown-content a:active {
-                      background-color: #ddd; /* Fondo aún más oscuro al hacer clic */
-                    }
-                  </style>
-
-                    <a>
-                    <a class="nav-item">
-                        <a class="nav-link" href="perdidos">Devoluciones y Pedidos</a>
-                    </a>
-                    <a class="nav-item">
-                        <a class="nav-link" href="carrito">🛒 Carrito</a>
-                    </a>
-                </ul>
-            </div>
-            <div class="navbar">
-                <ul class="submenu-list">
-                  <a id="menuBtn" onclick="openNav()">&#9776; Inicio</a>
-                  <div id="mySidenav" class="sidenav">
-                    <e href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</e>
-                    <h5 class="section-title" style="text-align:left;">Tendencia</h5>
-                    <e href="#">los mas vendidos</e>
-                    <e href="#">lo nuevo</e>
-                    <e href="#">productos del momento</e>
-                  </div>
-                  <a href="vender">Vender</a>
-                  <a href="masvendidos">Lo más vendido</a>
-                  <a href="videojuego">Video Juegos</a>
-                  <a href="amazonbasics">Amazon Basics</a>
-                  <a href="promocion">Promociones</a>
-                  <a href="musica">Música</a>
-                  <a href="lonuevo">Lo nuevo</a>
-                  <a href="outlet">Outlet</a>
-                  <a href="lonuevo">Lo más regalado</a>
-                  <a href="hogar">Hogar y Cocina</a>
-                  <a href="electronico">Electrónicos</a>
-                  <a href="serviciocliente">Servicio al cliente</a>
-                </ul>
-              </div>
-        </div>
-      
-    </header>    
-</nav>
-        <!-- Loader -->
-  <div class="loader" id="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Cargando...</span>
-    </div>
-  </div>
-  <style>
-    .spinner-border {
-      border: 5px solid #f3f3f3;
-      border-top: 5px solid #007bff;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      animation: spin 1s linear infinite;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    .container {
-      text-align: center;
-      padding: 20px;
-      display: none; /* Ocultamos el contenido hasta que termine el loader */
-    }
-
-    .promo-content {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .promo-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    .cta-text h1 {
-      font-size: 24px;
-      color: #333;
-      margin: 20px 0;
-    }
-
-    .cta-text p {
-      font-size: 18px;
-      color: #666;
-    }
-
-    .cta-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 30px;
-      background-color: #ffa41c;
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      border-radius: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .cta-button:hover {
-      background-color: #ff8c00;
-      transition: background-color 0.3s ease;
-    }
-
-    .product-list {
-      margin-top: 30px;
-      text-align: left;
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .product-item {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-
-    .product-item:last-child {
-      border-bottom: none;
-    }
-
-    .product-name {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .product-details {
-      font-size: 14px;
-      color: #666;
-    }
-  </style>
-</head>
-<body>
-    <!-- Lista de productos -->
-    <div class="product-list">
-      <h2>Productos recientes</h2>
-      <div class="product-item">
-        <img src="./img/regulador.jpg" alt="Anuncio">
-        <p class="product-name">Koblenz REGULADOR RS-1410</p>
-        <p class="product-details">1410 VA / 700 Watts, Pedido el 11 nov 2024</p>
-      </div>
-      <div class="product-item">
-      <img src="./img/capturadora.jpg" alt="Anuncio">
-        <p class="product-name">Yostyle Capturadora de Video HDMI</p>
-        <p class="product-details">Convertidor Video Audio, Pedido el 11 nov 2024</p>
-      </div>
-      <div class="product-item">
-      <img src="./img/webcam.jpg" alt="Anuncio">
-        <p class="product-name">Salandens Webcam</p>
-        <p class="product-details">Cámara Web HD 1080p, Pedido el 10 nov 2024</p>
-      </div>
-      <div class="product-item">
-      <img src="./img/zelda.jpg" alt="Anuncio">
-        <p class="product-name">The Legend of Zelda: Tears of the Kingdom</p>
-        <p class="product-details">Nintendo Switch, Pedido el 13 abr 2024</p>
-      </div>
-      <div class="product-item">
-      <img src="./img/libropsi.jpg" alt="Anuncio">
-        <p class="product-name">El hombre en busca de sentido</p>
-        <p class="product-details">Pedido el 29 oct 2023</p>
-      </div>
-      <div class="product-item">
-      <img src="./img/mario.jpg" alt="Anuncio">
-        <p class="product-name">Super Mario Odyssey</p>
-        <p class="product-details">Nintendo Switch, Pedido el 23 sep 2023</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer -->
-  <div class="navLeftFooter nav-sprite-v1" id="navFooter">
-    <a href="{{ url('/') }}" id="navBackToTop" aria-label="Inicio de página">
-        <div class="navFooterBackToTop">
-            <span class="navFooterBackToTopText">
-                Inicio de página
-            </span>
-        </div>
-    </a>
-    <div class="navFooterVerticalColumn navAccessibility" role="presentation">
-      <div class="navFooterVerticalRow navAccessibility" style="display: table-row;">
-            <div class="navFooterLinkCol navAccessibility">
-              <div class="navFooterColHead" role="heading" aria-level="6">Conócenos</div>
-            <ul>
-                <li class="nav_first">
-                  <a href="https://www.amazon.jobs/es" class="nav_a">Trabajar en Amazon</a>
-                </li>
-                <li>
-                  <a href="https://www.aboutamazon.mx/?utm_source=gateway&amp;utm_medium=footer&amp;token=about" class="nav_a">Acerca de Amazon</a>
-                </li>
-                <li>
-                  <a href="/gp/feature.html?docId=1001359011&amp;ref_=footer_gw_m_b_corporate" class="nav_a">Información corporativa</a>
-                </li>
-                <li>
-                  <a href="https://press.aboutamazon.com/" class="nav_a">Departamento de prensa</a>
-                </li>
-                <li class="nav_last ">
-                  <a href="https://www.amazon.science" class="nav_a">Amazon Science</a>
-                </li>
-            </ul>
-          </div>
-            <div class="navFooterColSpacerInner navAccessibility"></div>
-            <div class="navFooterLinkCol navAccessibility">
-              <div class="navFooterColHead" role="heading" aria-level="6">Gana dinero con nosotros</div>
-            <ul>
-                <li class="nav_first">
-                  <a href="https://vender.amazon.com.mx/?ld=AZMXSOA-footer&amp;ref_=footer_sell" class="nav_a">Vender en Amazon</a>
-                </li>
-                <li>
-                  <a href="https://supply.amazon.com.mx?ref_=footer_sta" class="nav_a">Suministro para Amazon</a>
-                </li>
-                <li>
-                  <a href="https://brandservices.amazon.com.mx/?ref=AOMXABRLGNRFOOT&amp;ld=AOMXABRLGNRFOOT" class="nav_a">Protege y desarrolla tu marca</a>
-                </li>
-                <li>
-                  <a href="https://vender.amazon.com.mx/handmade?ld=AZMXHND-footer&amp;ref_=footer_sell" class="nav_a">Vender en Amazon Handmade</a>
-                </li>
-                <li>
-                  <a href="https://kdp.amazon.com" class="nav_a">Publica tu libro en Kindle</a>
-                </li>
-                <li>
-                  <a href="https://afiliados.amazon.com.mx/?ref_=footer_affliate" class="nav_a">Programa de afiliados</a>
-                </li>
-                <li class="nav_last ">
-                  <a href="https://advertising.amazon.com.mx/?ref=footer_advtsing_mx" class="nav_a">Anuncia tus productos</a>
-                </li>
-            </ul>
-          </div>
-            <div class="navFooterColSpacerInner navAccessibility"></div>
-            <div class="navFooterLinkCol navAccessibility">
-              <div class="navFooterColHead" role="heading" aria-level="6">Podemos ayudarte</div>
-            <ul>
-                <li class="nav_first">
-                  <a href="/gp/css/returns/homepage.html?ref_=footer_hy_f_4" class="nav_a">Devolver o reemplazar productos</a>
-                </li>
-                <li>
-                  <a href="/hz/mycd/myx?ref_=footer_myk" class="nav_a">Gestionar contenido y dispositivos</a>
-                </li>
-                <li>
-                  <a href="https://www.amazon.com.mx/your-product-safety-alerts?ref_=footer_bsx_ypsa" class="nav_a">Alertas de revisión y de seguridad del producto</a>
-                </li>
-                <li>
-                  <a href="/registries?ref_=nav_footer_registry_giftlist_desktop" class="nav_a">Lista de regalos</a>
-                </li>
-                <li class="nav_last ">
-                  <a href="/gp/help/customer/display.html?nodeId=508510&amp;ref_=footer_gw_m_b_he" class="nav_a">Ayuda</a>
-                </li>
-            </ul>
-          </div>
-            <div class="navFooterColSpacerInner navAccessibility"></div>
-            <div class="navFooterLinkCol navAccessibility">
-              <div class="navFooterColHead" role="heading" aria-level="6">Métodos de pago</div>
-            <ul>
-                <li class="nav_first">
-                  <a href="/tc?ref_=footer_pay_tc" class="nav_a">Tarjetas de crédito y débito</a>
-                </li>
-                <li>
-                  <a href="/tarjetasderegalo?ref_=footer_pay_gc" class="nav_a">Tarjetas de regalo</a>
-                </li>
-                <li>
-                  <a href="/gp/browse.html?node=21374700011&amp;ref_=footer_paycode" class="nav_a">Pago en efectivo</a>
-                </li>
-                <li>
-                  <a href="/msi?ref_=footer_pay_ins" class="nav_a">Pago a meses</a>
-                </li>
-                <li class="nav_last ">
-                  <a href="/gp/browse.html?node=17277672011&amp;ref_=footer_amazoncash" class="nav_a">Amazon Cash</a>
-                </li>
-            </ul>
-          </div>
-      </div>
-    </div>
-    <div class="nav-footer-line"></div>
-    
-      <div class="navFooterLine navFooterLinkLine navFooterPadItemLine">
-        <span>
-          <div class="navFooterLine navFooterLogoLine">
-            <a aria-label="Amazon Mexico Home" href="/ref=footer_logo">
-            <div class="nav-logo-base nav-sprite"></div>
-            </a>
-          </div>
-    </span>
-        
-          <span class="icp-container-desktop"><div class="navFooterLine">
-    <style type="text/css">
-    #icp-touch-link-country { display: none; }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            background-color: #232f3e;
+            color: white;
+        }
     </style>
-    <a href="/customer-preferences/country?ie=UTF8&amp;preferencesReturnUrl=%2F&amp;ref_=footer_icp_cp" aria-label="Seleccionar un país/región para comprar." class="icp-button" id="icp-touch-link-country">
-      <span class="icp-flag-3 icp-flag-3-mx"></span><span class="icp-color-base">México</span>
-    </a>
-    </div></span>
-        
-      </div>
-      
-      
-      
-    <div class="navFooterLine navFooterLinkLine navFooterPadItemLine navFooterCopyright navFooterLineDivider">
-      <ul><li class="nav_first"><a href="/gp/help/customer/display.html?nodeId=508088&amp;ref_=footer_cou" id="" class="nav_a">Condiciones de uso</a> </li><li class="nav_last"><a href="/gp/help/customer/display.html?nodeId=468496&amp;ref_=footer_privacy" id="" class="nav_a">Aviso de privacidad</a> </li></ul><span>© 1996-2024, Amazon.com, Inc. o sus afiliados</span>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Servicio al Cliente</h1>
+        <p>Estamos aquí para ayudarte con cualquier consulta o problema.</p>
     </div>
+
+    <!-- Main content -->
+    <div class="main">
+        <h2>Preguntas Frecuentes</h2>
+
+        <div class="faq">
+            <h3>¿Cómo puedo rastrear mi pedido?</h3>
+            <p>Para rastrear tu pedido, ve a "Mis Pedidos" y selecciona el pedido que deseas rastrear. Haz clic en "Rastrear Envío".</p>
+        </div>
+
+        <div class="faq">
+            <h3>¿Cuál es la política de devoluciones?</h3>
+            <p>Puedes devolver la mayoría de los productos en un plazo de 30 días después de la entrega. Ve a "Mis Pedidos" y selecciona "Iniciar Devolución".</p>
+        </div>
+
+        <div class="faq">
+            <h3>¿Qué hago si recibí un producto defectuoso?</h3>
+            <p>Contacta con nuestro equipo de soporte o utiliza el proceso de devolución para solicitar un reemplazo.</p>
+        </div>
+
+        <div class="faq">
+            <h3>¿Cómo actualizo mi información de cuenta?</h3>
+            <p>Inicia sesión, ve a "Mi Cuenta" y selecciona "Configuración de Perfil" para actualizar tu información.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact">
+            <h3>Contacto</h3>
+            <p>Si no encontraste la respuesta que buscabas, por favor, envíanos un mensaje:</p>
+            <form action="#">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Escribe tu consulta aquí" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Gracias por elegir nuestro servicio al cliente. Estamos aquí para ayudarte.</p>
+    </div>
+
 </body>
 </html>

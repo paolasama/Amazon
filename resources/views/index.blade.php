@@ -17,45 +17,76 @@
 
         <button class="btn-seguro" id="ubicacion-btn">Ubicación</button>
         <script>
-          // Selecciona el botón usando su ID
-          const ubicacionBtn = document.getElementById('ubicacion-btn');
+  // Asegúrate de que el botón esté presente en el DOM
+  const ubicacionBtn = document.getElementById('ubicacion-btn');
 
-          // Agrega un evento de clic al botón
-          ubicacionBtn.addEventListener('click', function() {
-            if (navigator.geolocation) {
-              navigator.geolocation.getCurrentPosition(showPosition, showError);
-            } else {
-              alert("La geolocalización no es soportada por este navegador.");
-            }
+  // Verifica si el botón existe antes de añadir el evento
+  if (ubicacionBtn) {
+    // Agrega un evento de clic al botón
+    ubicacionBtn.addEventListener('click', function() {
+      // Notificación de carga
+      const loadingMessage = document.createElement('div');
+      loadingMessage.textContent = 'Obteniendo tu ubicación...';
+      document.body.appendChild(loadingMessage);
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+      } else {
+        alert("La geolocalización no es soportada por este navegador.");
+      }
+
+      // Función para mostrar la posición
+      function showPosition(position) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        // Llamada a la API para obtener la dirección
+        fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`)
+          .then(response => response.json())
+          .then(data => {
+            const address = data.address;
+            const street = address?.road || 'Calle no disponible';
+            const city = address?.city || address?.town || address?.village || 'Ciudad no disponible';
+            const state = address?.state || 'Estado no disponible';
+            const country = address?.country || 'País no disponible';
+            const postalCode = address?.postcode || 'Código postal no disponible';
+
+            alert(`Dirección: ${street}, ${city}, ${state}, ${country}\nCódigo Postal: ${postalCode}`);
+            loadingMessage.remove(); // Elimina el mensaje de carga
+          })
+          .catch(error => {
+            console.error('Error al obtener la ubicación:', error);
+            alert("No se pudo obtener la información de la ubicación.");
+            loadingMessage.remove(); // Elimina el mensaje de carga
           });
+      }
 
-          function showPosition(position) { 
-            const latitude = position.coords.latitude; 
-            const longitude = position.coords.longitude; 
-            fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${latitude}&lon=${longitude}`) 
-              .then(response => response.json()) 
-              .then(data => { const postalCode = data.address.postcode; 
-                alert(`Tu código postal es: ${postalCode}`); }) 
-              .catch(error => console.error('Error:', error)); 
-            }
+      // Función para manejar errores
+      function showError(error) {
+        loadingMessage.remove(); // Elimina el mensaje de carga
 
-          function showError(error) {
-            switch(error.code) {
-              case error.PERMISSION_DENIED:
-                alert("El usuario negó el permiso para acceder a la ubicación.");
-                break;
-              case error.POSITION_UNAVAILABLE:
-                alert("La información de la ubicación no está disponible.");
-                break;
-              case error.TIMEOUT:
-                alert("El tiempo de espera para obtener la ubicación se agotó.");
-                break;
-              case error.UNKNOWN_ERROR:
-                alert("Ocurrió un error desconocido.");
-                break;
-            }
-          }
-        </script>
+        switch(error.code) {
+          case error.PERMISSION_DENIED:
+            alert("El usuario negó el permiso para acceder a la ubicación.");
+            break;
+          case error.POSITION_UNAVAILABLE:
+            alert("La información de la ubicación no está disponible.");
+            break;
+          case error.TIMEOUT:
+            alert("El tiempo de espera para obtener la ubicación se agotó.");
+            break;
+          case error.UNKNOWN_ERROR:
+            alert("Ocurrió un error desconocido.");
+            break;
+        }
+      }
+    });
+  } else {
+    console.warn('El botón de ubicación no se encuentra en la página.');
+  }
+</script>
+
+
             <div class="navbar">
                 <a class="nav-item">
                   <select class="custom-select">
@@ -201,30 +232,20 @@
             <div class="navbar">
                 <ul class="submenu-list">
                   <a id="menuBtn" onclick="openNav()">&#9776; Inicio</a>
-                  <div id="mySidenav" class="sidenav">
-                    <e href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</e>
-                    <h5 class="section-title" style="text-align:left;">Tendencia</h5>
-                    <e href="#">los mas vendidos</e>
-                    <e href="#">lo nuevo</e>
-                    <e href="#">productos del momento</e>
-                    <br>
-                    <h5 class="section-title" style="text-align:left;">Contenido y dispositivos digitales</h5>
-                    <e href="#">amazon prime video</e>
-                    <e href="#">echo y alexa</e>
-                    <e href="#">amazon music</e>
-                    <e href="#">amazon fire tv</e>
-                    <e href="#">e-readers y ebooks kinder</e>
-                    <h5 class="section-title" style="text-align:left;">Buscar por categoría</h5>
-                    <e href="#">alimento y bebida</e>
-                    <e href="#">libro</e>
-                    <e href="#">pelicula,serie de tv y musica</e>
-                    <e href="#">electronico</e>
-                    <e href="#">ver mas</e>
-                    <h5 class="section-title" style="text-align:left;">Ayuda y configuración</h5>
-                    <e href="#">mi cuenta</e>
-                    <e href="#">ayuda</e>
-                    <e href="login">salir</e>
-                  </div>
+                      <!-- Barra lateral -->
+    <div id="mySidenav" class="sidenav">
+        <e href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</e>
+
+        <h5 class="section-title">Tendencia</h5>
+        <e href="#">Los más vendidos</e>
+        <e href="#">Lo nuevo</e>
+        <e href="#">Productos del momento</e>
+
+        <h5 class="section-title">Ayuda y configuración</h5>
+        <e href="#">Mi cuenta</e>
+        <e href="#">Ayuda</e>
+        <e href="index">Salir</e>
+    </div>
                   <a href="vender">Vender</a>
                   <a href="masvendidos">Lo más vendido</a>
                   <a href="videojuego">Video Juegos</a>
