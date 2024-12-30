@@ -57,3 +57,16 @@ Route::post('/register', [ControladorAuth::class, 'register']);
 //forget
 Route::get('/condiciones', [condicionesController::class, 'mostrar'])->name('condiciones');
 Route::get('/privacidad', [privacidadController::class, 'mostrar'])->name('privacidad');
+
+//las api de compras
+// routes/web.php
+
+
+Route::get('/compra', [ComprasController::class, 'mostrar'])->name('compra');
+
+
+
+//ver mas
+use App\Http\Controllers\OfertasController;
+
+Route::get('/ofertas', [OfertasController::class, 'index'])->name('ofertas');

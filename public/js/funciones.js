@@ -7,14 +7,23 @@ window.addEventListener('load', function() {
   content.style.display = 'block';
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
-    const verMasBtn = document.getElementById("verMasBtn");
-  
-    verMasBtn.addEventListener("click", function(event) {
-      event.preventDefault();
-      alert("¡Más promociones próximamente!");
-    });
+  const ofertasBtn = document.getElementById("ofertasBtn");
+
+  ofertasBtn.addEventListener("click", function(event) {
+      event.preventDefault(); // Evita la acción predeterminada del enlace
+      window.location.href = "/ofertas"; // Redirige a la ruta '/ofertas'
   });
+});
+
+
+
+
+
+
+
+
   
     /* Función para abrir el menú lateral */
     function openNav() {

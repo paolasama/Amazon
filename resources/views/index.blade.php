@@ -100,6 +100,7 @@
                   <form class="form-inline">
                     <input class="form-control" type="text" placeholder="Buscar Amazon.com.mx" aria-label="Buscar">
                     <button class="btn btn-outline-light" type="submit">🔍</button>
+                    
                   </form>
                 </a>
               </div>
@@ -290,9 +291,10 @@
                   <div style="text-align: center;">
                     <img src="./img/anuncios.png" alt="Anuncio" class="custom-size">                 
                   </div>
-                  <div style="text-align: center;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                  <div style="text-align: center; margin-top: 20px;">
+                    <a href="#" id="ofertasBtn" class="btn btn-primary">Ver ofertas</a>
                   </div>
+
                 </div>
       
                 <!-- Sección 2: Accesorios para gamers -->
