@@ -104,7 +104,7 @@
         <div class="products">
             <!-- Product 1 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Blender" alt="Blender">
+                <img src="./img/batidora.webp" alt="Blender">
                 <div class="details">
                     <h3>Batidora Multifuncional</h3>
                     <p>Perfecta para smoothies y recetas.</p>
@@ -114,7 +114,7 @@
 
             <!-- Product 2 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Cookware+Set" alt="Cookware Set">
+                <img src="./img/olla.webp" alt="Cookware Set">
                 <div class="details">
                     <h3>Juego de Ollas</h3>
                     <p>Alta calidad y diseño moderno.</p>
@@ -124,7 +124,7 @@
 
             <!-- Product 3 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Air+Fryer" alt="Air Fryer">
+                <img src="./img/freidora.webp" alt="Air Fryer">
                 <div class="details">
                     <h3>Freidora de Aire</h3>
                     <p>Ideal para cocinar de manera saludable.</p>
@@ -134,7 +134,7 @@
 
             <!-- Product 4 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Knife+Set" alt="Knife Set">
+                <img src="./img/cuchillo.webp" alt="Knife Set">
                 <div class="details">
                     <h3>Juego de Cuchillos</h3>
                     <p>Precisión y elegancia en tu cocina.</p>
@@ -144,7 +144,7 @@
 
             <!-- Product 5 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Table+Lamp" alt="Table Lamp">
+                <img src="./img/lampara.webp" alt="Table Lamp">
                 <div class="details">
                     <h3>Lámpara de Mesa</h3>
                     <p>Añade calidez a tu sala de estar.</p>
@@ -154,7 +154,7 @@
 
             <!-- Product 6 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Coffee+Machine" alt="Coffee Machine">
+                <img src="./img/cafetera-.webp" alt="Coffee Machine">
                 <div class="details">
                     <h3>Cafetera Automática</h3>
                     <p>Comienza tus días con el mejor café.</p>

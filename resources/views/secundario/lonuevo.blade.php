@@ -93,7 +93,7 @@
         <div class="new-items">
             <!-- Item 1 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=New+Laptop" alt="New Laptop">
+                <img src="./img/laptopgaming.webp" alt="New Laptop">
                 <div class="details">
                     <h3>High-Performance Laptop</h3>
                     <p>The latest in portable computing. Perfect for work and play.</p>
@@ -103,7 +103,7 @@
 
             <!-- Item 2 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Smartphone" alt="New Smartphone">
+                <img src="./img/Motorola.webp" alt="New Smartphone">
                 <div class="details">
                     <h3>Next-Gen Smartphone</h3>
                     <p>Experience cutting-edge technology in the palm of your hand.</p>
@@ -113,7 +113,7 @@
 
             <!-- Item 3 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Smartwatch" alt="New Smartwatch">
+                <img src="./img/reloj.webp" alt="New Smartwatch">
                 <div class="details">
                     <h3>Smartwatch Pro</h3>
                     <p>Track your fitness and stay connected with style.</p>
@@ -123,7 +123,7 @@
 
             <!-- Item 4 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Headphones" alt="New Headphones">
+                <img src="./img/noise.webp" alt="New Headphones">
                 <div class="details">
                     <h3>Noise-Cancelling Headphones</h3>
                     <p>Immerse yourself in sound with premium audio quality.</p>
@@ -133,7 +133,7 @@
 
             <!-- Item 5 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Camera" alt="New Camera">
+                <img src="./img/camara.webp" alt="New Camera">
                 <div class="details">
                     <h3>4K Action Camera</h3>
                     <p>Capture every moment with crystal-clear resolution.</p>
@@ -143,7 +143,7 @@
 
             <!-- Item 6 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Speaker" alt="New Speaker">
+                <img src="./img/bluetoon.webp" alt="New Speaker">
                 <div class="details">
                     <h3>Bluetooth Speaker</h3>
                     <p>Take your music anywhere with powerful sound.</p>

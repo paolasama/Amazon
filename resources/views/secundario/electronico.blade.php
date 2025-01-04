@@ -104,7 +104,7 @@
         <div class="products">
             <!-- Product 1 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Smartphone" alt="Smartphone">
+                <img src="./img/oppoA54.webp" alt="Smartphone">
                 <div class="details">
                     <h3>Smartphone 5G</h3>
                     <p>Rendimiento rápido y conectividad avanzada.</p>
@@ -114,7 +114,7 @@
 
             <!-- Product 2 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Laptop" alt="Laptop">
+                <img src="./img/laptopultra.webp" alt="Laptop">
                 <div class="details">
                     <h3>Laptop Ultraligera</h3>
                     <p>Potencia y portabilidad en un solo dispositivo.</p>
@@ -124,7 +124,7 @@
 
             <!-- Product 3 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Smartwatch" alt="Smartwatch">
+                <img src="./img/relojdepo.webp" alt="Smartwatch">
                 <div class="details">
                     <h3>Smartwatch Deportivo</h3>
                     <p>Monitoreo avanzado de salud y actividad.</p>
@@ -134,7 +134,7 @@
 
             <!-- Product 4 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Headphones" alt="Headphones">
+                <img src="./img/audifonoina.webp" alt="Headphones">
                 <div class="details">
                     <h3>Auriculares Inalámbricos</h3>
                     <p>Sonido de alta calidad sin cables.</p>
@@ -144,7 +144,7 @@
 
             <!-- Product 5 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Camera" alt="Camera">
+                <img src="./img/sonyfoto.webp" alt="Camera">
                 <div class="details">
                     <h3>Cámara Digital</h3>
                     <p>Captura tus momentos con claridad.</p>
@@ -154,7 +154,7 @@
 
             <!-- Product 6 -->
             <div class="product">
-                <img src="https://via.placeholder.com/300x200?text=Gaming+Console" alt="Gaming Console">
+                <img src="./img/gba.webp" alt="Gaming Console">
                 <div class="details">
                     <h3>Consola de Videojuegos</h3>
                     <p>Entretenimiento sin límites para toda la familia.</p>

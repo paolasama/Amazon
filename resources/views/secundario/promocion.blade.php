@@ -115,11 +115,11 @@
     <script>
         // Sample promotions data
         const promotions = [
-            { id: 1, name: "Smartphone 50% Off", description: "Get the latest smartphone with an exclusive 50% discount.", price: "$299", image: "https://via.placeholder.com/300x200?text=Smartphone" },
-            { id: 2, name: "Laptop Mega Sale", description: "High-performance laptops at unbeatable prices.", price: "$599", image: "https://via.placeholder.com/300x200?text=Laptop" },
-            { id: 3, name: "Kitchen Essentials", description: "Upgrade your kitchen with top-quality tools.", price: "$49", image: "https://via.placeholder.com/300x200?text=Kitchen+Essentials" },
-            { id: 4, name: "Gaming Console Bundle", description: "Get the ultimate gaming experience with this console bundle.", price: "$399", image: "https://via.placeholder.com/300x200?text=Gaming+Console" },
-            { id: 5, name: "Fashion Clearance", description: "Trendy clothing at clearance prices.", price: "$19", image: "https://via.placeholder.com/300x200?text=Fashion+Clearance" },
+            { id: 1, name: "Smartphone 50% Off", description: "Get the latest smartphone with an exclusive 50% discount.", price: "$299", image: "./img/telefono.webp" },
+            { id: 2, name: "Laptop Mega Sale", description: "High-performance laptops at unbeatable prices.", price: "$599", image: "./img/laptopgamer.webp" },
+            { id: 3, name: "Kitchen Essentials", description: "Upgrade your kitchen with top-quality tools.", price: "$49", image: "./img/KITCHEN.webp" },
+            { id: 4, name: "Gaming Console Bundle", description: "Get the ultimate gaming experience with this console bundle.", price: "$399", image: "./img/n64.webp" },
+            { id: 5, name: "Fashion Clearance", description: "Trendy clothing at clearance prices.", price: "$19", image: "./img/carousel.webp" },
         ];
 
         // Function to display promotions

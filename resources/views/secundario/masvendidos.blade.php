@@ -93,12 +93,12 @@
     <script>
         // Sample product data
         const products = [
-            { id: 1, name: "Laptop", category: "Electronics", price: "$999", image: "https://via.placeholder.com/200x150?text=Laptop" },
-            { id: 2, name: "Phone", category: "Electronics", price: "$699", image: "https://via.placeholder.com/200x150?text=Phone" },
-            { id: 3, name: "T-Shirt", category: "Clothing", price: "$25", image: "https://via.placeholder.com/200x150?text=T-Shirt" },
-            { id: 4, name: "Jeans", category: "Clothing", price: "$40", image: "https://via.placeholder.com/200x150?text=Jeans" },
-            { id: 5, name: "Chair", category: "Furniture", price: "$150", image: "https://via.placeholder.com/200x150?text=Chair" },
-            { id: 6, name: "Table", category: "Furniture", price: "$300", image: "https://via.placeholder.com/200x150?text=Table" },
+            { id: 1, name: "Laptop", category: "Electronics", price: "$999", image: "./img/laptop.webp" },
+            { id: 2, name: "Phone", category: "Electronics", price: "$699", image: "./img/iPhone-11.webp" },
+            { id: 3, name: "T-Shirt", category: "Clothing", price: "$25", image: "./img/tshirt.webp" },
+            { id: 4, name: "Jeans", category: "Clothing", price: "$40", image: "./img/Jeans.webp" },
+            { id: 5, name: "Chair", category: "Furniture", price: "$150", image: "./img/Chair.webp" },
+            { id: 6, name: "Table", category: "Furniture", price: "$300", image: "./img/table.webp" },
         ];
 
         // Function to display products

@@ -105,7 +105,7 @@
         <div class="outlet-items">
             <!-- Item 1 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Laptop" alt="Laptop">
+                <img src="./img/laptopnew.webp" alt="Laptop">
                 <div class="details">
                     <h3>High-Performance Laptop</h3>
                     <p class="price">$999</p>
@@ -115,7 +115,7 @@
 
             <!-- Item 2 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Smartphone" alt="Smartphone">
+                <img src="./img/iphone13.webp" alt="Smartphone">
                 <div class="details">
                     <h3>Latest Smartphone</h3>
                     <p class="price">$699</p>
@@ -125,7 +125,7 @@
 
             <!-- Item 3 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Headphones" alt="Headphones">
+                <img src="./img/sony.webp" alt="Headphones">
                 <div class="details">
                     <h3>Wireless Headphones</h3>
                     <p class="price">$150</p>
@@ -135,7 +135,7 @@
 
             <!-- Item 4 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Smartwatch" alt="Smartwatch">
+                <img src="./img/reloj1.webp" alt="Smartwatch">
                 <div class="details">
                     <h3>Smartwatch Pro</h3>
                     <p class="price">$300</p>
@@ -145,7 +145,7 @@
 
             <!-- Item 5 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Camera" alt="Camera">
+                <img src="./img/4k.webp" alt="Camera">
                 <div class="details">
                     <h3>4K Action Camera</h3>
                     <p class="price">$400</p>
@@ -155,7 +155,7 @@
 
             <!-- Item 6 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Gaming+Mouse" alt="Gaming Mouse">
+                <img src="./img/gaming-laptop.webp" alt="Gaming Mouse">
                 <div class="details">
                     <h3>Gaming Mouse</h3>
                     <p class="price">$80</p>

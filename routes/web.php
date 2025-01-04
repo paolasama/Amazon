@@ -22,7 +22,9 @@ use App\Http\Controllers\Secundario\VenderController;
 use App\Http\Controllers\Secundario\videojuegoController;
 
 //los botones de la barra principal
+
 Route::get('/carrito', [ComprasController::class, 'mostrar'])->name('carrito');
+
 Route::get('/perdidos', [PedidosController::class, 'mostrar'])->name('perdidos');
 
 //los botones de la barra secundario
@@ -70,3 +72,7 @@ Route::get('/compra', [ComprasController::class, 'mostrar'])->name('compra');
 use App\Http\Controllers\OfertasController;
 
 Route::get('/ofertas', [OfertasController::class, 'index'])->name('ofertas');
+
+
+
+Route::post('/agregar-al-carrito', [ComprasController::class, 'agregarAlCarrito'])->name('agregar.carrito');

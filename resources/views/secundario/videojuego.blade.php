@@ -93,13 +93,13 @@
     <script>
         // Sample product data
         const products = [
-            { id: 1, name: "PlayStation 5", category: "Consoles", price: "$499", image: "https://via.placeholder.com/200x150?text=PlayStation+5" },
-            { id: 2, name: "Xbox Series X", category: "Consoles", price: "$499", image: "https://via.placeholder.com/200x150?text=Xbox+Series+X" },
-            { id: 3, name: "Nintendo Switch", category: "Consoles", price: "$299", image: "https://via.placeholder.com/200x150?text=Nintendo+Switch" },
-            { id: 4, name: "The Legend of Zelda", category: "Games", price: "$59", image: "https://via.placeholder.com/200x150?text=Zelda" },
-            { id: 5, name: "Halo Infinite", category: "Games", price: "$59", image: "https://via.placeholder.com/200x150?text=Halo+Infinite" },
-            { id: 6, name: "Gaming Headset", category: "Accessories", price: "$79", image: "https://via.placeholder.com/200x150?text=Headset" },
-            { id: 7, name: "Controller", category: "Accessories", price: "$59", image: "https://via.placeholder.com/200x150?text=Controller" },
+            { id: 1, name: "PlayStation 5", category: "Consoles", price: "$499", image: "./img/play5.webp" },
+            { id: 2, name: "Xbox Series X", category: "Consoles", price: "$499", image: "./img/xbox-x.webp" },
+            { id: 3, name: "Nintendo Switch", category: "Consoles", price: "$299", image: "./img/nintendo.webp" },
+            { id: 4, name: "The Legend of Zelda", category: "Games", price: "$59", image: "./img/zelda.webp" },
+            { id: 5, name: "Halo Infinite", category: "Games", price: "$59", image: "./img/halo.webp" },
+            { id: 6, name: "Gaming Headset", category: "Accessories", price: "$79", image: "./img/audifono.webp" },
+            { id: 7, name: "Controller", category: "Accessories", price: "$59", image: "./img/playcontrol5.webp" },
         ];
 
         // Function to display products

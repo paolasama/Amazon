@@ -127,12 +127,12 @@
     <script>
         // Sample product data
         const products = [
-            { id: 1, name: "Smartphone", category: "Electronics", price: "$299", image: "https://via.placeholder.com/200x150?text=Smartphone" },
-            { id: 2, name: "Laptop", category: "Electronics", price: "$999", image: "https://via.placeholder.com/200x150?text=Laptop" },
-            { id: 3, name: "T-Shirt", category: "Clothing", price: "$20", image: "https://via.placeholder.com/200x150?text=T-Shirt" },
-            { id: 4, name: "Jeans", category: "Clothing", price: "$40", image: "https://via.placeholder.com/200x150?text=Jeans" },
-            { id: 5, name: "Blender", category: "Home", price: "$60", image: "https://via.placeholder.com/200x150?text=Blender" },
-            { id: 6, name: "Microwave", category: "Home", price: "$120", image: "https://via.placeholder.com/200x150?text=Microwave" },
+            { id: 1, name: "Smartphone", category: "Electronics", price: "$299", image: "./img/oppo.webp" },
+            { id: 2, name: "Laptop", category: "Electronics", price: "$999", image: "./img/hp.webp" },
+            { id: 3, name: "T-Shirt", category: "Clothing", price: "$20", image: "./img/tshirt1.webp" },
+            { id: 4, name: "Jeans", category: "Clothing", price: "$40", image: "./img/jeans.webp" },
+            { id: 5, name: "Blender", category: "Home", price: "$60", image: "./img/blender.webp" },
+            { id: 6, name: "Microwave", category: "Home", price: "$120", image: "./img/microda.webp" },
         ];
 
         // Function to display products

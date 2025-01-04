@@ -104,7 +104,7 @@
         <div class="gifted-items">
             <!-- Item 1 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Smart+Speaker" alt="Smart Speaker">
+                <img src="./img/altavoz.webp" alt="Smart Speaker">
                 <div class="details">
                     <h3>Altavoz Inteligente</h3>
                     <p>Ideal para hogares conectados.</p>
@@ -114,7 +114,7 @@
 
             <!-- Item 2 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Coffee+Maker" alt="Coffee Maker">
+                <img src="./img/cafetera.webp" alt="Coffee Maker">
                 <div class="details">
                     <h3>Cafetera Moderna</h3>
                     <p>El regalo perfecto para los amantes del café.</p>
@@ -124,7 +124,7 @@
 
             <!-- Item 3 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Board+Game" alt="Board Game">
+                <img src="./img/uno.webp" alt="Board Game">
                 <div class="details">
                     <h3>Juego de Mesa</h3>
                     <p>Diversión para toda la familia.</p>
@@ -134,7 +134,7 @@
 
             <!-- Item 4 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Noise+Cancelling+Headphones" alt="Noise Cancelling Headphones">
+                <img src="./img/audifonoHD.webp" alt="Noise Cancelling Headphones">
                 <div class="details">
                     <h3>Audífonos Cancelación de Ruido</h3>
                     <p>Perfectos para música y trabajo.</p>
@@ -144,7 +144,7 @@
 
             <!-- Item 5 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=Cookware+Set" alt="Cookware Set">
+                <img src="./img/cocina.webp" alt="Cookware Set">
                 <div class="details">
                     <h3>Juego de Cocina</h3>
                     <p>Un regalo elegante y funcional.</p>
@@ -154,7 +154,7 @@
 
             <!-- Item 6 -->
             <div class="item">
-                <img src="https://via.placeholder.com/300x200?text=E-Reader" alt="E-Reader">
+                <img src="./img/Kindle.webp" alt="E-Reader">
                 <div class="details">
                     <h3>Lectura Electrónica</h3>
                     <p>Para los amantes de los libros.</p>
