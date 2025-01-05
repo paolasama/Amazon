@@ -319,7 +319,7 @@
                     </div>
                   </div>
                   <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    <a href="#" id="videojuegosBtn" class="btn btn-primary">Ver más</a>
                   </div>
                 </div>
       
@@ -345,8 +345,9 @@
                     </div>
                   </div>
                   <div style="text-align: center; margin-top: 20px;">
-                    <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                    <a href="#" id="accesoriosBtn" class="btn btn-primary">Ver más</a>
                   </div>
+
                 </div>
       
                 <!-- Sección 4: Inicia sesión -->
@@ -417,10 +418,10 @@
                         <p>Adaptadores</p>
                       </div>
                     </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
+                      <!-- Botón de acción -->
+                      <div style="text-align: center; margin-top: 20px;">
+                        <a href="#" id="verMasBtnTecnologia" class="btn btn-primary">Ver más</a>
+                      </div>
                   </div>
         
                   <!-- Repite las secciones adicionales aquí... -->
@@ -449,10 +450,10 @@
                         <p>Xiaomi</p>
                       </div>
                     </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
+                      <!-- Botón de acción -->
+                        <div style="text-align: center; margin-top: 20px;">
+                          <a href="#" id="verMasBtnMarcas" class="btn btn-primary">Ver más</a>
+                        </div>
                   </div>
                   <div class="section">
                     <h5 class="section-title" style="text-align: center;">Tus juguetes favoritos a 24 meses</h5>
@@ -481,7 +482,7 @@
                     </div>
                     <!-- Botón de acción -->
                     <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
+                      <a href="#" id="verMasBtnJuguetes" class="btn btn-primary">Ver más</a>
                     </div>
                   </div>
                   <div class="section">
@@ -509,10 +510,10 @@
                         <p>Llantas</p>
                       </div>
                     </div>
-                    <!-- Botón de acción -->
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="#" id="verMasBtn" class="btn btn-primary">Ver más</a>
-                    </div>
+                      <!-- Botón de acción -->
+              <div style="text-align: center; margin-top: 20px;">
+                <a href="#" id="verMasBtnAuto" class="btn btn-primary">Ver más</a>
+              </div>
                   </div>
                 </div>
               </div>

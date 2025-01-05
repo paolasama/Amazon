@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,8 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            background-color: #f5f5f5;
+            color: #333;
         }
         /* Sidebar (categorías) */
         .sidebar {
@@ -56,7 +58,8 @@
         }
         .product img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
             border-radius: 4px;
         }
         .product h3 {
@@ -73,25 +76,25 @@
 
     <!-- Sidebar with categories -->
     <div class="sidebar">
-        <h2>Categories</h2>
+        <h2>Categorías</h2>
         <select id="category">
-            <option value="All">All Categories</option>
-            <option value="Consoles">Consoles</option>
-            <option value="Games">Games</option>
-            <option value="Accessories">Accessories</option>
+            <option value="All">Todas las Categorías</option>
+            <option value="Consoles">Consolas</option>
+            <option value="Games">Juegos</option>
+            <option value="Accessories">Accesorios</option>
         </select>
     </div>
 
     <!-- Main content with products -->
     <div class="main-content">
-        <h1>Video Games Store</h1>
+        <h1>Tienda de Videojuegos</h1>
         <div class="products" id="product-list">
-            <!-- Products will be displayed here -->
+            <!-- Los productos se mostrarán aquí -->
         </div>
     </div>
 
     <script>
-        // Sample product data
+        // Datos de ejemplo de productos
         const products = [
             { id: 1, name: "PlayStation 5", category: "Consoles", price: "$499", image: "./img/play5.webp" },
             { id: 2, name: "Xbox Series X", category: "Consoles", price: "$499", image: "./img/xbox-x.webp" },
@@ -102,15 +105,15 @@
             { id: 7, name: "Controller", category: "Accessories", price: "$59", image: "./img/playcontrol5.webp" },
         ];
 
-        // Function to display products
+        // Función para mostrar los productos
         function displayProducts(category) {
             const productList = document.getElementById('product-list');
-            productList.innerHTML = ''; // Clear the current list
+            productList.innerHTML = ''; // Limpiar la lista actual
 
-            // Filter products by category
+            // Filtrar productos por categoría
             const filteredProducts = category === "All" ? products : products.filter(product => product.category === category);
 
-            // Create product cards
+            // Crear las tarjetas de producto
             filteredProducts.forEach(product => {
                 const productCard = document.createElement('div');
                 productCard.classList.add('product');
@@ -123,12 +126,12 @@
             });
         }
 
-        // Event listener for category change
+        // Evento para cambiar la categoría
         document.getElementById('category').addEventListener('change', (event) => {
             displayProducts(event.target.value);
         });
 
-        // Initial display of all products
+        // Mostrar todos los productos al cargar la página
         displayProducts("All");
     </script>
 

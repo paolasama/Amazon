@@ -76,3 +76,22 @@ Route::get('/ofertas', [OfertasController::class, 'index'])->name('ofertas');
 
 
 Route::post('/agregar-al-carrito', [ComprasController::class, 'agregarAlCarrito'])->name('agregar.carrito');
+
+
+// Ruta para la página de accesorios
+Route::get('/accesorios', [HomeController::class, 'accesorios']);
+
+// Ruta para la página de videojuegos
+Route::get('/videojuegos', [HomeController::class, 'videojuegos']);
+
+// Ruta para la página de productos tecnológicos
+Route::get('/tecnologia', [HomeController::class, 'tecnologia']);
+
+// Ruta para la página de marcas favoritas
+Route::get('/marcas', [HomeController::class, 'marcas']);
+
+// Ruta para la página de juguetes
+Route::get('/juguetes', [HomeController::class, 'juguetes']);
+
+// Ruta para la página de ofertas por la semana del auto
+Route::get('/ofertas-auto', [HomeController::class, 'ofertasAuto']);

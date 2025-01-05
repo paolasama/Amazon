@@ -11,7 +11,7 @@ class ComprasController extends Controller
     public function mostrar()
     {
         // Aquí puedes devolver la vista que quieras, por ejemplo:
-        return view('compra.index');
+        return view('carrito');
     }
     public function agregarAlCarrito(Request $request)
 {
