@@ -97,6 +97,20 @@ return [
             'sslmode' => 'prefer',
         ],
 
+'mongodb' => [
+    'driver'   => 'mongodb',
+    'host'     => env('DB_HOST', '127.0.0.1'),
+    'port'     => env('DB_PORT', 27017),
+    'database' => env('DB_DATABASE', 'laravel'),
+    'username' => env('DB_USERNAME', 'root'),
+    'password' => env('DB_PASSWORD', '123'),
+    'options'  => [
+        'database' => env('DB_DATABASE'), // Opcional: base de datos para autenticación
+    ],
+],
+
+
+
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DB_URL'),
