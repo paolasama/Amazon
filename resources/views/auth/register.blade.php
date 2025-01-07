@@ -11,7 +11,7 @@
 
     <!-- Logo -->
     <div class="mb-3">
-        <a href="{{ route('login') }}">
+        <a href="{{ route('home') }}">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo de Amazon" style="max-width: 120px;">
         </a>
     </div>
@@ -25,7 +25,7 @@
             <!-- Correo -->
             <div class="mb-3">
                 <label for="email" class="form-label">Número de celular o correo electrónico</label>
-                <input id="email" type="email" name="email" class="form-control" value="{{ old('email') }}" required autocomplete="username">
+                <input id="email" type="email" name="email" class="form-control" value="{{ old('email') }}" required autocomplete="username" placeholder="Ingresa tu correo">
                 <!-- Mostrar errores de validación -->
                 @error('email')
                     <div class="text-danger mt-2">{{ $message }}</div>

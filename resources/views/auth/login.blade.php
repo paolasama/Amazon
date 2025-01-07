@@ -11,7 +11,7 @@
 
     <!-- Logo -->
     <div class="mb-3">
-        <a href="{{ route('login') }}">
+        <a href="{{ route('home') }}">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Logo de Amazon" style="max-width: 120px;">
         </a>
     </div>
@@ -26,7 +26,6 @@
             <div class="mb-3">
                 <label for="email" class="form-label">Número de celular o correo electrónico</label>
                 <input id="email" type="email" name="email" class="form-control" value="{{ old('email') }}" required autocomplete="username">
-                <!-- Mostrar errores de validación -->
                 @error('email')
                     <div class="text-danger mt-2">{{ $message }}</div>
                 @enderror
@@ -36,7 +35,6 @@
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
                 <input id="password" type="password" name="password" class="form-control" placeholder="Debe tener al menos 8 caracteres" required autocomplete="current-password">
-                <!-- Mostrar errores de validación -->
                 @error('password')
                     <div class="text-danger mt-2">{{ $message }}</div>
                 @enderror
@@ -47,17 +45,20 @@
                 <button type="submit" class="btn btn-warning">Continuar</button>
             </div>
 
+            <!-- Términos y condiciones -->
             <p class="small text-center">
-                Al continuar, aceptas las <a href="#" class="text-decoration-none">Condiciones de uso</a> y el <a href="#" class="text-decoration-none">Aviso de privacidad</a> de Amazon.
+                Al continuar, aceptas las <a href="{{ route('terms') }}" class="text-decoration-none">Condiciones de uso</a> y el <a href="{{ route('privacy') }}" class="text-decoration-none">Aviso de privacidad</a> de Amazon.
             </p>
 
+            <!-- Ayuda -->
             <div class="text-center my-3">
-                <a href="#" class="text-decoration-none">¿Necesitas ayuda?</a>
+                <a href="{{ route('help') }}" class="text-decoration-none">¿Necesitas ayuda?</a>
             </div>
 
+            <!-- Amazon Business -->
             <div class="text-center small">
                 ¿Estás haciendo compras para el trabajo?<br>
-                <a href="#" class="text-decoration-none">Compra en Amazon Business</a>
+                <a href="{{ route('business') }}" class="text-decoration-none">Compra en Amazon Business</a>
             </div>
         </form>
     </div>
@@ -70,9 +71,9 @@
 
     <!-- Footer -->
     <footer class="text-center mt-4 small">
-        <a href="#" class="text-decoration-none mx-2">Condiciones de uso</a>
-        <a href="#" class="text-decoration-none mx-2">Aviso de privacidad</a>
-        <a href="#" class="text-decoration-none mx-2">Ayuda</a>
+        <a href="{{ route('terms') }}" class="text-decoration-none mx-2">Condiciones de uso</a>
+        <a href="{{ route('privacy') }}" class="text-decoration-none mx-2">Aviso de privacidad</a>
+        <a href="{{ route('help') }}" class="text-decoration-none mx-2">Ayuda</a>
         <p class="text-muted mt-2">© 1996-2024, Amazon.com, Inc. o sus afiliados</p>
     </footer>
 
@@ -80,3 +81,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

@@ -105,37 +105,39 @@
                 </a>
               </div>
               <div class="menu">
-                    <button class="menu-button">Hola, identifícate. Cuenta y listas</button>
-                    <div class="dropdown-content">
-                      <a href="login" class="btn-seguro">Identifícate</a>
-                      <p>¿Eres un cliente nuevo? <a href="register">Empieza aquí</a></p>
-                      <table class="table table-bordered">
-                        <tbody>
-                          <tr>
-                            <!-- Columna "Mis listas" -->
-                            <td>
-                              <h4>Mis listas</h4>
-                              <a href="#">Crear una lista de deseos</a><br>
-                              <a href="#">Lista de bodas</a><br>
-                              <a href="#">Lista de Nacimiento</a><br>
-                              <a href="#">Descubre tu estilo</a><br>
-                              <a href="#">Explorar Showroom</a>
-                            </td>
-                            <!-- Línea vertical separadora -->
-                            <td class="divider">
-                              <h4>Mi cuenta</h4>
-                              <a href="#">Mi cuenta</a><br>
-                              <a href="#">Mis pedidos</a><br>
-                              <a href="#">Tu cuenta de vendedor</a><br>
-                              <a href="#">Mi lista de deseos</a><br>
-                              <a href="#">Mis recomendaciones</a><br>
-                              <a href="#">Mi suscripción a Amazon Prime</a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+    <button class="menu-button">Hola, identifícate. Cuenta y listas</button>
+    <div class="dropdown-content">
+        <a href="{{ route('login') }}" class="btn-seguro">Identifícate</a>
+        <p>¿Eres un cliente nuevo? <a href="{{ route('register') }}">Empieza aquí</a></p>
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <!-- Columna "Mis listas" -->
+                    <td>
+                        <h4>Mis listas</h4>
+                        <a href="{{ route('crear-lista-deseos') }}">Crear una lista de deseos</a><br>
+                        <a href="{{ route('lista-bodas') }}">Lista de bodas</a><br>
+                        <a href="{{ route('lista-nacimiento') }}">Lista de Nacimiento</a><br>
+                        <a href="#">Descubre tu estilo</a><br>
+                        <a href="#">Explorar Showroom</a>
+                    </td>
+                    <!-- Línea vertical separadora -->
+                    <td class="divider">
+                        <h4>Mi cuenta</h4>
+                        <a href="{{ route('mi-cuenta') }}">Mi cuenta</a><br>
+                        <a href="{{ route('mis-pedidos') }}">Mis pedidos</a><br>
+                        <a href="{{ route('cuenta-vendedor') }}">Tu cuenta de vendedor</a><br>
+                        <a href="{{ route('mi-lista-deseos') }}">Mi lista de deseos</a><br>
+                        <a href="{{ route('mis-recomendaciones') }}">Mis recomendaciones</a><br>
+                        <a href="{{ route('suscripcion-prime') }}">Mi suscripción a Amazon Prime</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
 
                   <!-- Estilos CSS para el menú flotante -->
                   <style>

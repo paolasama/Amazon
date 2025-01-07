@@ -95,3 +95,54 @@ Route::get('/juguetes', [HomeController::class, 'juguetes']);
 
 // Ruta para la página de ofertas por la semana del auto
 Route::get('/ofertas-auto', [HomeController::class, 'ofertasAuto']);
+
+
+
+
+
+// Autenticación
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
+
+// Mis listas
+Route::get('/crear-lista-deseos', function () {
+    return view('listas.crear-lista-deseos');
+})->name('crear-lista-deseos');
+
+Route::get('/lista-bodas', function () {
+    return view('listas.lista-bodas');
+})->name('lista-bodas');
+
+Route::get('/lista-nacimiento', function () {
+    return view('listas.lista-nacimiento');
+})->name('lista-nacimiento');
+
+// Mi cuenta
+Route::get('/mi-cuenta', function () {
+    return view('cuenta.mi-cuenta');
+})->name('mi-cuenta');
+
+Route::get('/mis-pedidos', function () {
+    return view('cuenta.mis-pedidos');
+})->name('mis-pedidos');
+
+Route::get('/cuenta-vendedor', function () {
+    return view('cuenta.cuenta-vendedor');
+})->name('cuenta-vendedor');
+
+Route::get('/mi-lista-deseos', function () {
+    return view('cuenta.mi-lista-deseos');
+})->name('mi-lista-deseos');
+
+Route::get('/mis-recomendaciones', function () {
+    return view('cuenta.mis-recomendaciones');
+})->name('mis-recomendaciones');
+
+Route::get('/suscripcion-prime', function () {
+    return view('cuenta.suscripcion-prime');
+})->name('suscripcion-prime');
