@@ -118,51 +118,51 @@
     <!-- Product Container -->
     <div class="product-container">
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 1">
-            <h3>Juego 1</h3>
-            <p>Una increíble aventura épica para disfrutar en tu consola.</p>
+            <img src="./img/smash.jpg" alt="Juego 1">
+            <h3>Super Smash Bros. Ultimate</h3>
+            <p>MXN1,016.59</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 2">
-            <h3>Juego 2</h3>
-            <p>Sumérgete en un mundo abierto y lleno de acción.</p>
+            <img src="./img/supermario.webp" alt="Juego 2">
+            <h3>Super Mario Party Jamboree</h3>
+            <p>MXN1,207.95</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 3">
-            <h3>Juego 3</h3>
-            <p>Explora y resuelve acertijos en un entorno misterioso.</p>
+            <img src="./img/starwars.webp" alt="Juego 3">
+            <h3>Star Wars Outlaws - Limited Edition (Amazon Exclusive), PlayStation 5</h3>
+            <p>-16% MXN1,198.80</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 4">
-            <h3>Juego 4</h3>
-            <p>Disfruta de combates épicos y personaliza tu personaje.</p>
+            <img src="./img/zeldae.webp" alt="Juego 4">
+            <h3>The Legend Of Zelda: Echoes Of Wisdom for Nintendo Switch</h3>
+            <p>-12% MXN1,077.60</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 5">
-            <h3>Juego 5</h3>
-            <p>Únete a una guerra intergaláctica con jugadores de todo el mundo.</p>
+            <img src="./img/marvel.webp" alt="Juego 5">
+            <h3>Marvel vs. Capcom Fighting Collection: Arcade Classics - Nintendo Switch</h3>
+            <p>-30% MXN711.55</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 6">
-            <h3>Juego 6</h3>
-            <p>Una historia épica llena de magia y batallas.</p>
+            <img src="./img/metal.webp" alt="Juego 6">
+            <h3>Metal Gear Solid: Master Collection Vol.1 (PS5)</h3>
+            <p>-30% MXN569.41</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 7">
-            <h3>Juego 7</h3>
-            <p>Vive la emoción del deporte con gráficos de última generación.</p>
+            <img src="./img/sonic.webp" alt="Juego 7">
+            <h3>Sonic X Shadow Generations - PlayStation 5</h3>
+            <p>-6% MXN955.58</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180" alt="Juego 8">
-            <h3>Juego 8</h3>
-            <p>Explora mundos de fantasía mientras luchas contra criaturas míticas.</p>
+            <img src="./img/dbz.webp" alt="Juego 8">
+            <h3>DRAGON BALL: Sparking! ZERO PS5</h3>
+            <p>-14% MXN1,220.15</p>
             <button>Comprar</button>
         </div>
     </div>

@@ -119,73 +119,73 @@
     <div class="offers">
         <!-- Tarjetas de ofertas -->
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+1" alt="Oferta 1">
+            <img src="./img/iphone12.jpg" alt="Oferta 1">
             <div class="offer-details">
-                <h3>Producto 1</h3>
-                <p>$19.99</p>
+                <h3>Apple - iPhone 12, 64GB, negro, totalmente desbloqueado (reacondicionado)</h3>
+                <p>MXN5,043.30</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+2" alt="Oferta 2">
+            <img src="./img/laptop.jpg" alt="Oferta 2">
             <div class="offer-details">
-                <h3>Producto 2</h3>
-                <p>$39.99</p>
+                <h3>HP Portátil ultraligero de 14 pulgadas para estudiantes y negocios, Intel Quad-Core, 8 GB de RAM</h3>
+                <p>-15% MXN4,311.21</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+3" alt="Oferta 3">
+            <img src="./img/cafeterakeurig.webp" alt="Oferta 3">
             <div class="offer-details">
-                <h3>Producto 3</h3>
-                <p>$24.99</p>
+                <h3>Keurig K50- Tamaño cervecero 1ct</h3>
+                <p>-47% MXN1,626.67</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+4" alt="Oferta 4">
+            <img src="./img/guate.jpg" alt="Oferta 4">
             <div class="offer-details">
-                <h3>Producto 4</h3>
-                <p>$29.99</p>
+                <h3>Achiou Guantes de invierno para hombre y mujer</h3>
+                <p>MXN146.22 - MXN164.52</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+5" alt="Oferta 5">
+            <img src="./img/telegamer.webp" alt="Oferta 5">
             <div class="offer-details">
-                <h3>Producto 5</h3>
-                <p>$49.99</p>
+                <h3>SAMSUNG Odyssey G50D Series QHD Fast IPS</h3>
+                <p>-30% MXN6,100.57</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+6" alt="Oferta 6">
+            <img src="./img/camisacasual.jpg" alt="Oferta 6">
             <div class="offer-details">
-                <h3>Producto 6</h3>
-                <p>$59.99</p>
+                <h3>J.VER Camisas de vestir para hombre, de manga larga</h3>
+                <p>MXN365.84 - MXN457.35</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+7" alt="Oferta 7">
+            <img src="./img/ropainterior.jpg" alt="Oferta 7">
             <div class="offer-details">
-                <h3>Producto 7</h3>
-                <p>$69.99</p>
+                <h3>romision Ropa interior térmica para hombre</h3>
+                <p>MXN508.19 - MXN752.22</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>
 
         <div class="offer-card">
-            <img src="https://via.placeholder.com/250x150?text=Oferta+8" alt="Oferta 8">
+            <img src="./img/sudadera.jpg" alt="Oferta 8">
             <div class="offer-details">
-                <h3>Producto 8</h3>
-                <p>$79.99</p>
+                <h3>Bofell Sudaderas de moda para mujer</h3>
+                <p>MXN347.54 - MXN422.78</p>
                 <a href="#">Comprar ahora</a>
             </div>
         </div>

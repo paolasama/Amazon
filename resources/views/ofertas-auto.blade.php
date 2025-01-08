@@ -130,49 +130,49 @@
     <!-- Products Container -->
     <div class="products-container">
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Faro+LED" alt="Faro LED">
+            <img src="./img/faro.webp" alt="Faro LED">
             <h3>Faro LED para Auto</h3>
             <p>Ilumina tu camino con este potente faro LED para tu vehículo.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Aceite+Motor" alt="Aceite Motor">
+            <img src="./img/aceite.jpg" alt="Aceite Motor">
             <h3>Aceite para Motor</h3>
             <p>El mejor aceite para mantener tu motor en óptimas condiciones.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Cargador+Batería" alt="Cargador de Batería">
+            <img src="./img/cargador.webp" alt="Cargador de Batería">
             <h3>Cargador de Batería</h3>
             <p>Recarga la batería de tu vehículo con este cargador de alta capacidad.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Cubierta+Neumático" alt="Cubierta Neumático">
+            <img src="./img/cubierta.webp" alt="Cubierta Neumático">
             <h3>Cubierta para Neumáticos</h3>
             <p>Protege tus neumáticos con esta cubierta resistente para todo tipo de clima.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Kit+de+Herramientas" alt="Kit de Herramientas">
+            <img src="./img/kit.webp" alt="Kit de Herramientas">
             <h3>Kit de Herramientas para Auto</h3>
             <p>Todo lo que necesitas para reparar tu auto en cualquier emergencia.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Limpiador+Cristales" alt="Limpiador de Cristales">
+            <img src="./img/limpiador.webp" alt="Limpiador de Cristales">
             <h3>Limpiador de Cristales</h3>
             <p>Mantén tu vista clara con este limpiador de cristales para auto.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Funda+Asiento" alt="Funda para Asiento">
+            <img src="./img/funda.webp" alt="Funda para Asiento">
             <h3>Funda para Asientos</h3>
             <p>Protege tus asientos con esta funda resistente y fácil de lavar.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/1d3c6a/ffffff?text=Espejo+Retrovisor" alt="Espejo Retrovisor">
+            <img src="./img/espejo.webp" alt="Espejo Retrovisor">
             <h3>Espejo Retrovisor Inteligente</h3>
             <p>Un espejo retrovisor con pantalla LCD para mayor seguridad y comodidad.</p>
             <button>Comprar</button>

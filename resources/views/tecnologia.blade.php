@@ -140,56 +140,56 @@
     <!-- Product Container -->
     <div class="product-container">
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Smartphone" alt="Smartphone">
+            <img src="./img/celu.webp" alt="Smartphone">
             <h3>Smartphone Ultra Rápido</h3>
             <p>Un teléfono inteligente con tecnología de última generación.</p>
             <span class="price">$299.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Laptop" alt="Laptop">
+            <img src="./img/pro.webp" alt="Laptop">
             <h3>Laptop Gaming Pro</h3>
             <p>Potente laptop diseñada para la mejor experiencia de juego.</p>
             <span class="price">$799.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Audífonos" alt="Audífonos">
+            <img src="./img/audi.webp" alt="Audífonos">
             <h3>Audífonos Bluetooth</h3>
             <p>Disfruta de un sonido claro y envolvente sin cables.</p>
             <span class="price">$89.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Smartwatch" alt="Smartwatch">
+            <img src="./img/relo.webp" alt="Smartwatch">
             <h3>Smartwatch Fitness</h3>
             <p>Reloj inteligente con monitoreo de salud y actividades deportivas.</p>
             <span class="price">$149.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Tablet" alt="Tablet">
+            <img src="./img/table1.webp" alt="Tablet">
             <h3>Tablet 10” Ultra HD</h3>
             <p>Gran rendimiento y pantalla espectacular para todos tus contenidos.</p>
             <span class="price">$249.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Monitor" alt="Monitor">
+            <img src="./img/monitor.webp" alt="Monitor">
             <h3>Monitor 27” 4K</h3>
             <p>Visualiza contenido con una resolución nítida y colores vibrantes.</p>
             <span class="price">$359.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Teclado" alt="Teclado">
+            <img src="./img/razer.webp" alt="Teclado">
             <h3>Teclado Mecánico RGB</h3>
             <p>Teclado para gamers con retroiluminación personalizable.</p>
             <span class="price">$89.99</span>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/333/fff?text=Cámara" alt="Cámara">
+            <img src="./img/4kcamara.webp" alt="Cámara">
             <h3>Cámara Digital 4K</h3>
             <p>Captura imágenes y videos de alta calidad con esta cámara profesional.</p>
             <span class="price">$599.99</span>

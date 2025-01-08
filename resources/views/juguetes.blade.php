@@ -132,49 +132,49 @@
     <!-- Products Container -->
     <div class="products-container">
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Muñeca" alt="Muñeca">
+            <img src="./img/muñeca.webp" alt="Muñeca">
             <h3>Muñeca Interactiva</h3>
             <p>Una muñeca que habla y canta para que tu niño se divierta.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Carro" alt="Carro">
+            <img src="./img/toyota.webp" alt="Carro">
             <h3>Carro Eléctrico</h3>
             <p>Un carro eléctrico para que tu pequeño pueda conducir como los grandes.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Pelota" alt="Pelota">
+            <img src="./img/fut.webp" alt="Pelota">
             <h3>Pelota de Fútbol</h3>
             <p>Una pelota resistente ideal para jugar al aire libre.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Rompecabezas" alt="Rompecabezas">
+            <img src="./img/rompe.webp" alt="Rompecabezas">
             <h3>Rompecabezas 3D</h3>
             <p>Un divertido rompecabezas para desarrollar la mente de los niños.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Carro+Control+Remoto" alt="Carro Control Remoto">
+            <img src="./img/carro.webp" alt="Carro Control Remoto">
             <h3>Carro Control Remoto</h3>
             <p>Un carro con control remoto para disfrutar de emocionantes carreras.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Avion" alt="Avión">
+            <img src="./img/avion.jpg" alt="Avión">
             <h3>Avión de Juguete</h3>
             <p>Avión de juguete ideal para los niños que aman la aviación.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Barbie" alt="Barbie">
+            <img src="./img/barbie.jpg" alt="Barbie">
             <h3>Muñeca Barbie</h3>
             <p>La muñeca más famosa para que tu hijo cree historias y aventuras.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x150/ff6600/ffffff?text=Juguete+Musical" alt="Juguete Musical">
+            <img src="./img/musical.webp" alt="Juguete Musical">
             <h3>Juguete Musical</h3>
             <p>Un juguete musical que fomenta la creatividad de los más pequeños.</p>
             <button>Comprar</button>

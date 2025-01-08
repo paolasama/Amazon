@@ -118,8 +118,9 @@
                                     <a href="{{ route('crear-lista-deseos') }}">Crear una lista de deseos</a><br>
                                     <a href="{{ route('lista-bodas') }}">Lista de bodas</a><br>
                                     <a href="{{ route('lista-nacimiento') }}">Lista de Nacimiento</a><br>
-                                    <a href="#">Descubre tu estilo</a><br>
-                                    <a href="#">Explorar Showroom</a>
+                                    <a href="{{ route('descubre-tu-estilo') }}">Descubre tu estilo</a>
+                                    <a href="{{ route('explorar-showroom') }}">Explorar Showroom</a>
+
                                 </td>
                                 <!-- Línea vertical separadora -->
                                 <td class="divider">

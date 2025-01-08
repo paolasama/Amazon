@@ -133,56 +133,56 @@
     <div class="brands-container">
         <!-- Producto 1 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Apple" alt="Apple">
+            <img src="./img/apple1.jpg" alt="Apple">
             <h3>Apple</h3>
             <p>Explora los productos más innovadores de Apple con descuentos exclusivos.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 2 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Samsung" alt="Samsung">
+            <img src="./img/samsung.webp" alt="Samsung">
             <h3>Samsung</h3>
             <p>Encuentra ofertas en smartphones, televisores y otros productos Samsung.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 3 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Huawei" alt="Huawei">
+            <img src="./img/huawei.webp" alt="Huawei">
             <h3>Huawei</h3>
             <p>Aprovecha las promociones en dispositivos Huawei y tecnología de vanguardia.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 4 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Xiaomi" alt="Xiaomi">
+            <img src="./img/xiaomi.webp" alt="Xiaomi">
             <h3>Xiaomi</h3>
             <p>Consigue productos Xiaomi con la mejor relación calidad-precio.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 5 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=LG" alt="LG">
+            <img src="./img/lg.webp" alt="LG">
             <h3>LG</h3>
             <p>Disfruta de productos electrónicos y electrodomésticos LG con grandes descuentos.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 6 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Sony" alt="Sony">
+            <img src="./img/sonyaudi.webp" alt="Sony">
             <h3>Sony</h3>
             <p>Los mejores productos de entretenimiento con calidad Sony, ahora en oferta.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 7 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Nintendo" alt="Nintendo">
+            <img src="./img/switch.webp" alt="Nintendo">
             <h3>Nintendo</h3>
             <p>Disfruta de las consolas y videojuegos más emocionantes de Nintendo.</p>
             <button>Comprar</button>
         </div>
         <!-- Producto 8 -->
         <div class="brand">
-            <img src="https://via.placeholder.com/250x150/333/fff?text=Microsoft" alt="Microsoft">
+            <img src="./img/xboxm.webp" alt="Microsoft">
             <h3>Microsoft</h3>
             <p>Los productos de Microsoft, ahora a precios más bajos que nunca.</p>
             <button>Comprar</button>

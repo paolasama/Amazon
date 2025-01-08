@@ -125,49 +125,49 @@
     <!-- Product Container -->
     <div class="product-container">
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Teclado+Halloween" alt="Teclado Halloween">
+            <img src="./img/teclado.webp" alt="Teclado Halloween">
             <h3>Teclado de Calabaza</h3>
             <p>Un teclado con retroiluminación naranja para iluminar tu noche de Halloween.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Mouse+Halloween" alt="Mouse Halloween">
+            <img src="./img/fatama.webp" alt="Mouse Halloween">
             <h3>Mouse Fantasmal</h3>
             <p>Un mouse iluminado que te guía en tus aventuras nocturnas.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Audífonos+Halloween" alt="Audífonos Halloween">
+            <img src="./img/audifonojack.jpg" alt="Audífonos Halloween">
             <h3>Audífonos Tenebrosos</h3>
             <p>Sumérgete en el terror con sonido envolvente y estilo único.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Alfombrilla+Halloween" alt="Alfombrilla Halloween">
+            <img src="./img/knife.webp" alt="Alfombrilla Halloween">
             <h3>Alfombrilla Vampírica</h3>
             <p>Una alfombrilla suave con diseño de murciélagos que te protegerá en la oscuridad.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Auriculares+Halloween" alt="Auriculares Halloween">
+            <img src="./img/audifonoca.jpg" alt="Auriculares Halloween">
             <h3>Auriculares Calabaza</h3>
             <p>Auriculares con diseño exclusivo y sonido envolvente para noches de miedo.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Camisa+Halloween" alt="Camisa Halloween">
+            <img src="./img/camiseta.jpeg" alt="Camisa Halloween">
             <h3>Camisa Espeluznante</h3>
             <p>Viste con estilo y terror en cada movimiento.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Gorra+Halloween" alt="Gorra Halloween">
+            <img src="./img/gorro.jpg" alt="Gorra Halloween">
             <h3>Gorra del Hombre Lobo</h3>
             <p>Protege tu cabeza con una gorra temática de Halloween y mantén tu estilo.</p>
             <button>Comprar</button>
         </div>
         <div class="product">
-            <img src="https://via.placeholder.com/250x180/ff6600/ffffff?text=Luces+Halloween" alt="Luces Halloween">
+            <img src="./img/luz.webp" alt="Luces Halloween">
             <h3>Luces Fantasmales</h3>
             <p>Decora tu espacio de juego con luces con temática de Halloween.</p>
             <button>Comprar</button>

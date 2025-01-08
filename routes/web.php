@@ -122,6 +122,16 @@ Route::get('/lista-nacimiento', function () {
     return view('listas.lista-nacimiento');
 })->name('lista-nacimiento');
 
+// Ruta para descubrir tu estilo
+Route::get('/descubre-tu-estilo', function () {
+    return view('listas.descubre-tu-estilo');
+})->name('descubre-tu-estilo');
+
+// Ruta para explorar el showroom
+Route::get('/explorar-showroom', function () {
+    return view('listas.explorar-showroom');
+})->name('explorar-showroom');
+
 // Mi cuenta
 Route::get('/mi-cuenta', function () {
     return view('cuenta.mi-cuenta');
